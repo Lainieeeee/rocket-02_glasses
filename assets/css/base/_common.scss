@@ -1,0 +1,52 @@
+/*====================================================
+custom color
+====================================================*/
+$dark:        #000000;
+$rose-white:  #FBF2F2;
+$red:         #AA0601;
+
+/*====================================================
+settings
+====================================================*/
+* {
+  box-sizing: border-box;
+  word-break: break-all;
+}
+html {
+  font-size: 62.5%;
+  -moz-text-size-adjust: 100%;
+       text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  @include fontSans;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: $dark;
+  font-weight: normal;
+}
+img {
+  vertical-align: bottom;
+  max-width: 100%;
+  height: auto;
+  -ms-interpolation-mode: bicubic;
+}
+::-moz-selection {
+  background: $red;
+  color: $rose-white;
+}
+::selection {
+  background: $red;
+  color: $rose-white;
+}
+
+.fontRoboto{
+  @include fontRoboto;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: $dark;
+  font-weight: normal;
+  &.italic{
+    font-style: italic;
+  }
+}
