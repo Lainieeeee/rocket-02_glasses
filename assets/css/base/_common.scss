@@ -2,8 +2,10 @@
 custom color
 ====================================================*/
 $dark:        #000000;
+$gray:        #707070;
 $rose-white:  #FBF2F2;
 $red:         #AA0601;
+$dark-red:    #650300;
 
 /*====================================================
 settings
@@ -44,9 +46,17 @@ img {
   @include fontRoboto;
   font-size: 1.6rem;
   line-height: 1.5;
-  color: $dark;
   font-weight: normal;
   &.italic{
     font-style: italic;
   }
+}
+
+.container{
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.bgRoseWhite{
+  background-color: $rose-white;
 }

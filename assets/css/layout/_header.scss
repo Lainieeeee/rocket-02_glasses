@@ -1,0 +1,34 @@
+header{
+    background-color: $red;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    .headerInner{
+        padding: 1.6rem 5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        nav{
+            ul{
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                li{
+                    margin-left: 6rem;
+                    a{
+                        text-decoration: none;
+                        color: #fff;
+                    }
+                    @include md{
+                        margin-left: 3rem;
+                    }
+                }
+            }
+        }
+    }
+}
+.positionBlock{
+    height: 80.56px;
+}

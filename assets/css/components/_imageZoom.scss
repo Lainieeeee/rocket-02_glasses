@@ -1,0 +1,42 @@
+.imageZoomSquare,.imageZoomHorizontal{
+    a{
+        .img{
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                object-fit: cover;
+                -o-object-fit: cover;
+                transition: all 0.5s ease-in-out;
+                left: 0; // 
+            }
+        }
+        &:hover{
+            .img {
+                img {
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}
+// 正方形
+.imageZoomSquare {
+    a{
+        .img{
+            padding-top: 100%;
+        }
+    }
+}
+// 長方形
+.imageZoomHorizontal {
+    a{
+        .img{
+            padding-top: 37%;
+        }
+    }
+}
