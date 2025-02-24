@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <!-- css -->
+    <link rel="stylesheet" href="/assets/css/all.css">
+    <!-- js -->
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- google icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <!-- title -->
+    <title>眼鏡官網</title>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="container headerInner">
+            <h1>
+                <a href="/">
+                    <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/logo-white.png?raw=true" alt="Logo" width="80" height="48.57">
+                </a>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="series.html">系列鏡框</a></li>
+                    <li><a href="store.html">門市據點</a></li>
+                    <li><a href="blog.html">部落格</a></li>
+                    <li><a href="faq.html">常見問題</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="positionBlock"></div>
+
+
+    <!-- <div class="searchBox">
+        <div class="searchIcon">
+            <span class="material-symbols-outlined">search</span>
+        </div>
+        <form class="" action="">
+            <input name="keyword" class="form-control" type="search" placeholder="請輸入關鍵字" aria-label="Search" value="" required>
+        </form>
+    </div>
+    <style>
+        .searchBox{
+            position: relative;
+        }
+        .searchBox .searchIcon{
+            position: absolute;
+            top: 50%;
+            left: 0;
+            color: green;
+            font-size: 2rem;
+        }
+        .searchBox input[type="search"]{
+            width: 0;
+            padding: 0;
+            transition: width .35s ease;
+            font-size: 1.6rem;
+        }
+        .searchBox input[type="search"]:focus,
+        .searchBox input[type="search"]:active{
+            width: 300px;
+        }
+        .searchBox:hover input[type="search"]{
+            width: 300px;
+        }
+    </style> -->
+
+
+
+    <!-- main -->
+    <main>
+        <div class="blogNavigation">
+            <nav class="container">
+                <ul>
+                    <li><a href="">最新消息</a></li>
+                    <li><a href="">特別企劃</a></li>
+                    <li><a href="">新品上市</a></li>
+                    <li><a href="">鏡框小知識</a></li>
+                </ul>
+                <div class="searchBox">
+                    <form class="" action="">
+                        <input name="keyword" class="form-control" type="search" placeholder="請輸入關鍵字" aria-label="Search" value="" required>
+                    </form>
+                    <div class="searchIcon">
+                        <span class="material-symbols-outlined">search</span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="container">
+            <ul class="breadcrumbList">
+                <li><a href="/">首頁</a></li>
+                <li><a href="blog.html">部落格</a></li>
+                <li>特別企劃</li>
+                <li>情人特別企劃</li>
+            </ul>
+            <ul class="categoryList">
+                <li>#special</li>
+                <li>#event</li>
+            </ul>
+            <div class="blogDetailBox">
+                <div class="left">
+                    <div class="detailTitle">
+                        <h2>情人特別企劃</h2>
+                        <p class="fontRoboto">2020 Valentine’s Special</p>
+                    </div>
+                    <div class="textEditorArea">
+                        <div>
+                            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/blog-1.png?raw=true" alt="圖片">
+                        </div>
+                        <p>
+                            一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。<br>
+                            本次拍攝的鏡框款式與 NEEDS CLASSIC 聯名設計款，偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！
+                        </p>
+                        <div>
+                            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/blog-2.png?raw=true" alt="圖片">
+                        </div>
+                        <p>
+                            一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。<br>
+                            本次拍攝的鏡框款式與 NEEDS CLASSIC 聯名設計款，偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！
+                        </p>
+                        <div>
+                            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/blog-3.png?raw=true" alt="圖片">
+                        </div>
+                        <p>
+                            2/14(五)-2/20(日)<br>
+                            至本店單筆消費滿2980元, 就送情人節限定眼鏡盒1個<br>
+                            期間優惠還有~~持他牌鏡框更換鏡片<br>
+                            薄型非球面鏡片折300元<br>
+                            濾藍光鏡片折500元<br>
+                            快快帶上另一半<br>
+                            讓彼此每一次睜開眼，都被愛的視線包圍!
+                        </p>
+                    </div>
+
+
+                    <div class="underBox">
+                        <div class="shareBox">
+                            <p class="fontRoboto">Share</p>
+                            <ul>
+                                <li>
+                                    <a href="" target="_blank">
+                                        <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/logo-facebook.png?raw=true" alt="facebook">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank">
+                                        <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/logo-instagram.png?raw=true" alt="instagram">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="arrowBox">
+                            <p>
+                                <a href="">
+                                    <span class="material-symbols-outlined">arrow_back</span>
+                                    上一篇：街頭潮人訪問 1
+                                </a>
+                            </p>
+                            <p>
+                                <a href="">
+                                    下一篇：街頭潮人訪問 2
+                                    <span class="material-symbols-outlined">arrow_forward</span>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class="tagList">
+                    <p>
+                        <span class="material-symbols-outlined">label</span>
+                        TAGS
+                    </p>
+                    <ul>
+                        <li><a href="">#special</a></li>
+                        <li><a href="">#sale</a></li>
+                        <li><a href="">#new_item</a></li>
+                        <li><a href="">#interview</a></li>
+                        <li><a href="">#trivia</a></li>
+                        <li><a href="">#news</a></li>
+                        <li><a href="">#event</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- footer -->
+    <footer>
+        <div class="container footerInner">
+            <div class="topBox">
+                <nav>
+                    <ul>
+                        <li><a href="/">首頁</a></li>
+                        <li><a href="series.html">系列鏡框</a></li>
+                        <li><a href="store.html">門市據點</a></li>
+                        <li><a href="blog.html">部落格</a></li>
+                        <li><a href="faq.html">常見問題</a></li>
+                    </ul>
+                </nav>
+                <ul class="socialIconBox">
+                    <li>
+                        <a href="" target="_blank">
+                            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/ic-social-fb.png?raw=true" alt="facebook">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank">
+                            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/ic_social_ig.png?raw=true" alt="instagram">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank">
+                            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/ic_social_line.png?raw=true" alt="line">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="infoBox">
+                <li>
+                    <a href="tel:0800-000-000">
+                        <span class="icon material-symbols-outlined">call</span>
+                        <span>0800-000-000</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:glasses@business.com">
+                        <span class="icon material-symbols-outlined">mail</span>
+                        <span>glasses@business.com</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="underBox">
+                <p class="copyright">
+                    <small>Copyright &copy; 2020 Glasses.All rights reserved.</small>
+                </p>
+                <ul>
+                    <li><a href="privacy.html">隱私權政策</a></li>
+                    <li><a href="service.html">服務條款</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

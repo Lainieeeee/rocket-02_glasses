@@ -1,0 +1,261 @@
+.blogNavigation{
+    background-color: $dark-red;
+    color: #fff;
+    .container{
+        padding: 1.6rem 5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        ul{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            li{
+                a{
+                    text-decoration: none;
+                    color: #fff;
+                    font-size: 2rem;
+                }
+                margin-right: 4.8rem;
+            }
+        }
+        .searchBox{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            &:hover {
+                input[type="search"]{
+                    width: 300px;
+                    border: 1px solid #fff;
+                    padding: 0.2rem 0.8rem !important;;
+                }
+            }
+            .searchIcon{
+                color: #fff;
+                cursor: pointer;
+                margin-left: 1rem;
+                span{
+                    font-size: 4rem;
+                }
+            }
+            input[type="search"]{
+                margin: 0;
+                padding: 0 !important;
+                width: 0px;
+                background: $dark-red;
+                outline: none;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+                font-size: 1.6rem!important;
+                color: #fff;
+                min-height: 36px;
+                @include fontSans;
+                border: none;
+                transition: width 0.35s ease;
+                border: inherit;
+                &::placeholder {
+                    color: rgba(#fff, 0.5);
+                }
+            }
+            @include lg{
+                &:hover {
+                    input[type="search"]{
+                        width: 200px;
+                    }
+                }
+                input[type="search"]{
+                    &:focus,&:active{
+                        width: 200px;
+                    }
+                }
+            }
+        }
+        @include md{
+            padding: 1.6rem 1.5rem;
+            display: block;
+            ul{
+                li{
+                    width: calc(100% / 4);
+                    text-align: center;
+                    a{
+                        font-size: 1.6rem;
+                    }
+                    margin-right: inherit;
+                }
+            }
+            .searchBox{
+                display: none;
+            }
+        }
+    }
+}
+.breadcrumbList{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    li{
+        &+li{
+            position: relative;
+            padding-left: 2rem;
+            &:before{
+                content: "/";
+                position: absolute;
+                display: inline-block;
+                top: 0;
+                left: 0.6rem;
+                color: $dark;
+            }
+        }
+        a{
+            text-decoration: none;
+            color: $dark;
+        }
+        &:last-child{
+            color: $red;
+        }
+    }
+}
+.categoryList{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    li{
+        color: $red;
+        font-size: 2.4rem;
+        font-weight: bold;
+        &+li{
+            padding-left: 2rem;
+        }
+        @include md{
+            font-size: 1.6rem;
+        }
+    }
+}
+.blogDetailBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 5rem;
+    .left{
+        width: 60%;
+        margin-right: 4rem;
+        .detailTitle{
+            margin-bottom: 1.6rem;
+            h2{
+                font-size: 4.8rem;
+            }
+            p{
+                font-size: 2.4rem;
+            }
+        }
+        .textEditorArea{
+            color: $gray;
+        }
+        .underBox{
+            margin-top: 5rem;
+            .shareBox{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                border-bottom: 1px solid $gray;
+                margin-bottom: 1.6rem;
+                padding-bottom: 1.6rem;
+                p{
+                    font-weight: bold;
+                }
+                ul{
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    li{
+                        margin-left: 1.6rem;
+                        a{
+                            img{
+                                width: 2.4rem;
+                                height: auto;
+                            }
+                        }
+                    }
+                }
+            }
+            .arrowBox{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                p{
+                    a{
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        text-decoration: none;
+                        color: $dark;
+                    }
+                }
+            }
+        }
+        @include lg{
+            margin-right: 2.4rem;
+        }
+    }
+    .tagList{
+        width: calc(40% - 4rem);
+        color: $red;
+        font-weight: bold;
+        p{
+            font-size: 3.2rem;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            span{
+                font-size: 4rem;
+            }
+        }
+        ul{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-wrap: wrap;
+            li{
+                margin: 0 2rem 0 1rem;
+                a{
+                    text-decoration: none;
+                    color: $red;
+                    font-size: 2.4rem;
+                }
+            }
+        }
+        @include lg{
+            width: calc(40% - 2.4rem);
+            p,ul li a{
+                font-size: 1.6rem;
+                span{
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+    @include md{
+        display: block;
+        margin-top: 2rem;
+        .left{
+            width: 100%;
+            .detailTitle {
+                h2 {
+                    font-size: 2.4rem;
+                }
+                p{
+                    font-size: 1.6rem;
+                }
+            }
+            .underBox{
+                display: none;
+            }
+        }
+        .tagList{
+            display: none;
+        }
+    }
+}
