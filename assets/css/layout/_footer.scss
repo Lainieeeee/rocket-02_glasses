@@ -4,7 +4,7 @@ footer{
     .footerInner{
         padding: 5rem;
         @include md{
-            padding: 5rem 2rem;
+            padding: 5rem 1.5rem;
             position: relative;
         }
         .topBox{
@@ -56,7 +56,7 @@ footer{
             @include md {
                 position: absolute;
                 top: 5rem;
-                right: 2rem;
+                right: 1.5rem;
             }
         }
         .infoBox{

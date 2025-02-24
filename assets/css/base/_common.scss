@@ -55,6 +55,10 @@ img {
 .container{
   max-width: 1400px;
   margin: 0 auto;
+  padding: 10rem 5rem;
+  @include md{
+    padding: 5rem 1.5rem;
+  }
 }
 
 .bgRoseWhite{
@@ -67,4 +71,8 @@ img {
   border-left: 8px solid $red;
   margin-bottom: 4rem;
   padding-left: 2rem;
+  @include md{
+    font-size: 2.4rem;
+    padding-left: 1rem;
+  }
 }

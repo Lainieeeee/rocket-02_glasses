@@ -114,6 +114,12 @@ img {
 .container {
   max-width: 1400px;
   margin: 0 auto;
+  padding: 10rem 5rem;
+}
+@media screen and (max-width: 767.98px) {
+  .container {
+    padding: 5rem 1.5rem;
+  }
 }
 
 .bgRoseWhite {
@@ -126,6 +132,12 @@ img {
   border-left: 8px solid #AA0601;
   margin-bottom: 4rem;
   padding-left: 2rem;
+}
+@media screen and (max-width: 767.98px) {
+  .commonTitle {
+    font-size: 2.4rem;
+    padding-left: 1rem;
+  }
 }
 
 .imageZoomSquare a .img, .imageZoomHorizontal a .img {
@@ -169,6 +181,15 @@ header .headerInner {
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (max-width: 767.98px) {
+  header .headerInner {
+    padding: 0rem;
+    display: block;
+  }
+  header .headerInner h1 {
+    padding: 1.6rem 1.5rem;
+  }
+}
 header .headerInner nav ul {
   display: flex;
   justify-content: flex-end;
@@ -182,13 +203,31 @@ header .headerInner nav ul li a {
   color: #fff;
 }
 @media screen and (max-width: 767.98px) {
+  header .headerInner nav ul {
+    flex-wrap: wrap;
+  }
   header .headerInner nav ul li {
-    margin-left: 3rem;
+    width: 50%;
+    margin-left: 0;
+    border-top: 1px solid #fff;
+  }
+  header .headerInner nav ul li a {
+    text-align: center;
+    display: block;
+    padding: 1rem;
+  }
+  header .headerInner nav ul li:nth-of-type(2n) {
+    border-left: 1px solid #fff;
   }
 }
 
 .positionBlock {
   height: 80.56px;
+}
+@media screen and (max-width: 767.98px) {
+  .positionBlock {
+    height: 170.56px;
+  }
 }
 
 footer {
@@ -197,6 +236,12 @@ footer {
 }
 footer .footerInner {
   padding: 5rem;
+}
+@media screen and (max-width: 767.98px) {
+  footer .footerInner {
+    padding: 5rem 1.5rem;
+    position: relative;
+  }
 }
 footer .footerInner .topBox {
   display: flex;
@@ -217,7 +262,12 @@ footer .footerInner .topBox nav ul li a {
 }
 @media screen and (max-width: 991.98px) {
   footer .footerInner .topBox nav ul li {
-    margin-right: 3rem;
+    margin-right: 2.5rem;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  footer .footerInner .topBox nav {
+    display: none;
   }
 }
 footer .footerInner .topBox .socialIconBox {
@@ -237,7 +287,14 @@ footer .footerInner .topBox .socialIconBox li a img {
     margin-left: 1.5rem;
   }
   footer .footerInner .topBox .socialIconBox li a img {
-    width: 4rem;
+    width: 2.4rem;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  footer .footerInner .topBox {
+    position: absolute;
+    top: 5rem;
+    right: 1.5rem;
   }
 }
 footer .footerInner .infoBox {
@@ -257,6 +314,19 @@ footer .footerInner .infoBox li a .icon {
   font-size: 4rem;
   margin-right: 1rem;
 }
+@media screen and (max-width: 767.98px) {
+  footer .footerInner .infoBox li a {
+    font-size: 1.6rem;
+  }
+  footer .footerInner .infoBox li a .icon {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  footer .footerInner .infoBox {
+    margin: 0 0 3rem;
+  }
+}
 footer .footerInner .underBox {
   display: flex;
   justify-content: space-between;
@@ -266,7 +336,6 @@ footer .footerInner .underBox ul {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  font-size: 1.4rem;
 }
 footer .footerInner .underBox ul li {
   margin-left: 6rem;
@@ -278,6 +347,21 @@ footer .footerInner .underBox ul li a {
 @media screen and (max-width: 767.98px) {
   footer .footerInner .underBox ul li {
     margin-left: 3rem;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  footer .footerInner .underBox {
+    display: block;
+  }
+  footer .footerInner .underBox ul {
+    justify-content: flex-start;
+    margin-top: 2rem;
+  }
+  footer .footerInner .underBox ul li {
+    margin-left: inherit;
+  }
+  footer .footerInner .underBox ul li + li {
+    margin-left: 2rem;
   }
 }
 
@@ -314,9 +398,6 @@ footer .footerInner .underBox ul li a {
   font-size: 2rem;
 }
 
-main .container {
-  padding: 10rem 5rem;
-}
 main .container .topPageTitle {
   font-size: 4.8rem;
   color: #650300;
@@ -589,4 +670,112 @@ main .topSectionFive .container .contactBox .submitBtn:hover {
   font-weight: bold;
   font-size: 2rem;
   margin-bottom: 1rem;
+}
+
+.selectStoreBox {
+  font-size: 2.4rem;
+  margin-bottom: 4rem;
+}
+.selectStoreBox select {
+  margin: 0 0 0 1rem;
+  padding: 0.4rem 0.75rem 0.4rem 1rem;
+  background: #fff;
+  border: 1px solid #CED4DA;
+  outline: none;
+  font-family: "Noto Sans TC", serif;
+  color: rgba(73, 80, 87, 0.7);
+  width: 304px;
+  font-size: 1.8rem;
+}
+.selectStoreBox select:invalid {
+  color: #000000;
+}
+.selectStoreBox select option {
+  color: #000000;
+}
+.selectStoreBox select option:first-child {
+  color: #000000;
+}
+@media screen and (max-width: 575.98px) {
+  .selectStoreBox {
+    font-size: 1.6rem;
+  }
+  .selectStoreBox select {
+    width: calc(100% - 8.4rem);
+  }
+}
+
+.storeInfo .tab {
+  display: none;
+}
+.storeInfo .tab.active {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.storeInfo .tab .adressBox {
+  width: calc(42% - 2rem);
+}
+.storeInfo .tab .adressBox .detailBox {
+  border: 1px solid rgba(0, 0, 0, 0.1254901961);
+}
+.storeInfo .tab .adressBox .detailBox p {
+  padding: 1rem 2rem;
+  font-size: 2.4rem;
+}
+.storeInfo .tab .adressBox .detailBox ul {
+  border-top: 1px solid rgba(0, 0, 0, 0.1254901961);
+  padding: 1.5rem 2rem;
+  font-size: 2rem;
+}
+.storeInfo .tab .adressBox .detailBox ul li + li {
+  margin-top: 0.7rem;
+}
+.storeInfo .tab .adressBox .detailBox ul li span {
+  margin-top: -0.4rem;
+  display: inline-flex;
+  vertical-align: middle;
+}
+.storeInfo .tab .adressBox .detailBox ul li a {
+  text-decoration: none;
+  color: #000000;
+}
+.storeInfo .tab .googleMap {
+  width: 58%;
+  position: relative;
+  padding-top: 36.5%;
+  height: 0;
+}
+.storeInfo .tab .googleMap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 767.98px) {
+  .storeInfo .tab.active {
+    display: block;
+  }
+  .storeInfo .tab .adressBox {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .storeInfo .tab .adressBox .img, .storeInfo .tab .adressBox .detailBox {
+    width: calc((100% - 2rem) / 2);
+  }
+  .storeInfo .tab .googleMap {
+    width: 100%;
+    margin-top: 2rem;
+    padding-top: 60%;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  .storeInfo .tab .adressBox {
+    display: block;
+  }
+  .storeInfo .tab .adressBox .img, .storeInfo .tab .adressBox .detailBox {
+    width: 100%;
+  }
 }/*# sourceMappingURL=all.css.map */

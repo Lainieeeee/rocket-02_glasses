@@ -35,7 +35,6 @@
 
 main{
     .container{
-        padding: 10rem 5rem;
         .topPageTitle{
             font-size: 4.8rem;
             color: $dark-red;
@@ -158,8 +157,6 @@ main{
             }
         }
     }
-
-
     .topSectionFour{
         .recommendList {
             display: flex;
