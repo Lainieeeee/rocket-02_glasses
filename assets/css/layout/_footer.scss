@@ -3,6 +3,10 @@ footer{
     color: #fff;
     .footerInner{
         padding: 5rem;
+        @include md{
+            padding: 5rem 2rem;
+            position: relative;
+        }
         .topBox{
             display: flex;
             justify-content: space-between;
@@ -19,9 +23,12 @@ footer{
                             color: #fff;
                         }
                         @include lg{
-                            margin-right: 3rem;
+                            margin-right: 2.5rem;
                         }
                     }
+                }
+                @include md{
+                    display: none;
                 }
             }
             .socialIconBox{
@@ -40,11 +47,16 @@ footer{
                         margin-left: 1.5rem;
                         a{
                             img{
-                                width: 4rem;
+                                width: 2.4rem;
                             }
                         }
                     }
                 }
+            }
+            @include md {
+                position: absolute;
+                top: 5rem;
+                right: 2rem;
             }
         }
         .infoBox{
@@ -63,7 +75,16 @@ footer{
                         font-size: 4rem;
                         margin-right: 1rem;
                     }
+                    @include md{
+                        font-size: 1.6rem;
+                        .icon{
+                            font-size: 1.8rem;
+                        }
+                    }
                 }
+            }
+            @include md{
+                margin: 0 0 3rem;
             }
         }
         .underBox{
@@ -74,7 +95,6 @@ footer{
                 display: flex;
                 justify-content: flex-end;
                 align-items: center;
-                font-size: 1.4rem;
                 li{
                     margin-left: 6rem;
                     a{
@@ -83,6 +103,19 @@ footer{
                     }
                     @include md{
                         margin-left: 3rem;
+                    }
+                }
+            }
+            @include md{
+                display: block;
+                ul{
+                    justify-content: flex-start;
+                    margin-top: 2rem;
+                    li{
+                        margin-left: inherit;
+                        &+li{
+                            margin-left: 2rem;
+                        }
                     }
                 }
             }
