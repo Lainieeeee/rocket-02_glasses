@@ -397,6 +397,25 @@ footer .footerInner .underBox ul li a {
   padding: 0.5rem 1.2rem;
   font-size: 2rem;
 }
+@media screen and (max-width: 991.98px) {
+  .mainVisual .textBox .subText {
+    font-size: 2.8rem;
+  }
+  .mainVisual .textBox .titleText {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  .mainVisual .textBox {
+    padding: 1.6rem 1.5rem;
+  }
+  .mainVisual .textBox .subText {
+    font-size: 1.6rem;
+  }
+  .mainVisual .textBox .titleText {
+    font-size: 2.4rem;
+  }
+}
 
 main .container .topPageTitle {
   font-size: 4.8rem;
@@ -407,6 +426,11 @@ main .container .topPageTitle {
 }
 main .container .topPageTitle.textWhite {
   color: #fff;
+}
+@media screen and (max-width: 767.98px) {
+  main .container .topPageTitle {
+    font-size: 2.4rem;
+  }
 }
 main .topSectionOne ul {
   display: flex;
@@ -435,7 +459,7 @@ main .topSectionOne ul li dl dt {
 main .topSectionOne ul li dl dd {
   text-align: left;
 }
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 991.98px) {
   main .topSectionOne ul li {
     width: calc((100% - 4rem) / 2);
   }
@@ -444,6 +468,20 @@ main .topSectionOne ul li dl dd {
   }
   main .topSectionOne ul li:nth-of-type(n+3) {
     margin-top: 4rem;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  main .topSectionOne ul {
+    display: block;
+  }
+  main .topSectionOne ul li {
+    width: initial;
+  }
+  main .topSectionOne ul li + li {
+    margin: 2rem 0 0;
+  }
+  main .topSectionOne ul li dl dd {
+    display: inline-block;
   }
 }
 main .topSectionTwo .seriesList {
@@ -469,13 +507,18 @@ main .topSectionTwo .seriesListItem a p {
   font-weight: bold;
   line-height: 1;
 }
+@media screen and (max-width: 991.98px) {
+  main .topSectionTwo .seriesListItem {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
 @media screen and (max-width: 767.98px) {
   main .topSectionTwo .seriesList {
     display: block;
   }
   main .topSectionTwo .seriesListItem {
-    width: 80%;
-    margin: 0 auto;
+    width: 100%;
   }
   main .topSectionTwo .seriesListItem + .seriesListItem {
     margin: 4rem auto 0;
@@ -561,6 +604,20 @@ main .topSectionFour .recommendListItem .textBox time {
     margin-left: 2rem;
   }
   main .topSectionFour .recommendListItem:nth-of-type(n+3) {
+    margin-top: 2rem;
+  }
+  main .topSectionFour .recommendListItem .textBox time {
+    margin-top: 2rem;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  main .topSectionFour .recommendListItem {
+    width: 100%;
+  }
+  main .topSectionFour .recommendListItem:nth-of-type(2n) {
+    margin-left: 0;
+  }
+  main .topSectionFour .recommendListItem:nth-of-type(n+2) {
     margin-top: 2rem;
   }
 }

@@ -30,6 +30,23 @@
             padding: 0.5rem 1.2rem;
             font-size: 2rem;
         }
+        @include lg{
+            .subText{
+                font-size: 2.8rem;
+            }
+            .titleText{
+                font-size: 4rem;
+            }
+        }
+        @include sm{
+            padding: 1.6rem 1.5rem;
+            .subText{
+                font-size: 1.6rem;
+            }
+            .titleText{
+                font-size: 2.4rem;
+            }
+        }
     }
 }
 
@@ -43,6 +60,9 @@ main{
             margin-bottom: 4rem;
             &.textWhite{
                 color: #fff;
+            }
+            @include md{
+                font-size: 2.4rem;
             }
         }
     }
@@ -76,13 +96,27 @@ main{
                         text-align: left;
                     }
                 }
-                @include md{
+                @include lg{
                     width: calc((100% - 4rem)/2);
                     &:nth-of-type(2n - 1){
                         margin-left: 0;
                     }
                     &:nth-of-type(n+3){
                         margin-top: 4rem;
+                    }
+                }
+            }
+            @include md{
+                display: block;
+                li{
+                    width: initial;
+                    &+li{
+                        margin: 2rem 0 0;
+                    }
+                    dl{
+                        dd{
+                            display: inline-block;
+                        }
                     }
                 }
             }
@@ -111,11 +145,16 @@ main{
                     }
                 }
             }
-            @include md{
-                display: block;
+            @include lg{
                 &Item{
                     width: 80%;
                     margin: 0 auto;
+                }
+            }
+            @include md{
+                display: block;
+                &Item{
+                    width: 100%;
                     &+.seriesListItem{
                         margin: 4rem auto 0;
                     }
@@ -198,6 +237,20 @@ main{
                         margin-left: 2rem;
                     }
                     &:nth-of-type(n+3){
+                        margin-top: 2rem;
+                    }
+                    .textBox {
+                        time {
+                            margin-top: 2rem;
+                        }
+                    }
+                }
+                @include sm{
+                    width: 100%;
+                    &:nth-of-type(2n){
+                        margin-left: 0;
+                    }
+                    &:nth-of-type(n+2){
                         margin-top: 2rem;
                     }
                 }
