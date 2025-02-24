@@ -10,6 +10,13 @@ header{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @include md{
+            padding: 0rem;
+            display: block;
+            h1{
+                padding: 1.6rem 2rem;
+            }
+        }
         nav{
             ul{
                 display: flex;
@@ -21,8 +28,21 @@ header{
                         text-decoration: none;
                         color: #fff;
                     }
-                    @include md{
-                        margin-left: 3rem;
+                }
+                @include md{
+                    flex-wrap: wrap;
+                    li{
+                        width: 50%;
+                        margin-left: 0;
+                        border-top: 1px solid #fff;
+                        a{
+                            text-align: center;
+                            display: block;
+                            padding: 1rem;
+                        }
+                        &:nth-of-type(2n){
+                            border-left: 1px solid #fff;
+                        }
                     }
                 }
             }
@@ -31,4 +51,7 @@ header{
 }
 .positionBlock{
     height: 80.56px;
+    @include md{
+        height: 170.56px;
+    }
 }
