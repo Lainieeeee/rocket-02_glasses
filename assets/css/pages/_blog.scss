@@ -1,9 +1,10 @@
 /*====================================================
 Placeholder(佔位符)
 ====================================================*/
-%line-clamp{
+@mixin line-clamp($lines) {
     display: -webkit-box;
     -webkit-box-orient: vertical;
+    -webkit-line-clamp: $lines;
     overflow: hidden;
 }
 
@@ -51,15 +52,13 @@ Placeholder(佔位符)
                         .titleText{
                             color: $dark-red;
                             font-size: 3.2rem;
-                            @extend %line-clamp;
-                            -webkit-line-clamp: 1; // 文字最多顯示1行
+                            @include line-clamp(1); // 文字最多顯示1行
                         }
                         .subText{
                             color: $dark;
                             font-size: 2rem;
                             font-weight: bold;
-                            @extend %line-clamp;
-                            -webkit-line-clamp: 1; // 文字最多顯示1行
+                            @include line-clamp(1); // 文字最多顯示1行
                         }
                     }
                     time{
@@ -70,8 +69,7 @@ Placeholder(佔位符)
                     }
                 }
                 .textBox{
-                    @extend %line-clamp;
-                    -webkit-line-clamp: 5; // 文字最多顯示5行
+                    @include line-clamp(5); // 文字最多顯示1行
                 }
             }
             .blogBtn{
@@ -120,54 +118,6 @@ Placeholder(佔位符)
                 }
                 .blogBtn{
                     display: none;
-                }
-            }
-        }
-    }
-}
-.pageNavigation{
-    margin-top: 13.5rem;
-    text-align: center;
-    @include md{
-        margin-top: 6.4rem;
-    }
-    .pagination{
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        border: 1px solid $gray;
-        .pageItem{
-            a{
-                text-decoration: none;
-                color: $gray;
-                padding: 1rem;
-                display: inline-block;
-            }
-            &+.pageItem{
-                border-left: 1px solid $gray;
-            }
-            &:last-of-type,&:first-of-type{
-                a{
-                    background-color: #F2F2F2;
-                }
-            }
-            &:not(:last-of-type),&:not(:first-of-type){
-                a{
-                    padding: 1rem 2rem;
-                    @include md{
-                        padding: 1rem 1.4rem;
-                    }
-                }
-            }
-            &.disabled{
-                a{
-                    background-color: #fff;
-                }
-            }
-            &.active{
-                a{
-                    background-color: $dark;
-                    color: #fff;
                 }
             }
         }

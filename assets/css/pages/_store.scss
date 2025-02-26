@@ -1,36 +1,6 @@
-.selectStoreBox{
-    font-size: 2.4rem;
-    margin-bottom: 4rem;
-    select{
-        margin: 0 0 0 1rem;
-        padding: 0.4rem 0.75rem 0.4rem 1rem;
-        background: #fff;
-        border: 1px solid #CED4DA;
-        outline: none;
-        // -webkit-appearance: none;
-        // -moz-appearance: none;
-        // appearance: none;
-        @include fontSans;
-        color: rgba(#495057, 0.7);
-        width: 304px;
-        font-size: 1.8rem;
-        &:invalid {
-            color: $dark;
-        }
-        option {
-            color: $dark;
-            &:first-child {
-                color: $dark;
-            }
-        }
-    }
-    @include sm{
-        font-size: 1.6rem;
-        select{
-            width: calc(100% - 8.4rem);
-        }
-    }
-}
+/*====================================================
+Placeholder(佔位符)
+====================================================*/
 %detail-box{
     border: 1px solid #00000020;
     flex-grow: 1;
@@ -82,6 +52,47 @@
         }
     }
 }
+
+/*====================================================
+門市據點 Common
+====================================================*/
+.selectStoreBox{
+    font-size: 2.4rem;
+    margin-bottom: 4rem;
+    select{
+        margin: 0 0 0 1rem;
+        padding: 0.4rem 0.75rem 0.4rem 1rem;
+        background: #fff;
+        border: 1px solid #CED4DA;
+        outline: none;
+        // -webkit-appearance: none;
+        // -moz-appearance: none;
+        // appearance: none;
+        @include fontSans;
+        color: rgba(#495057, 0.7);
+        width: 304px;
+        font-size: 1.8rem;
+        &:invalid {
+            color: $dark;
+        }
+        option {
+            color: $dark;
+            &:first-child {
+                color: $dark;
+            }
+        }
+    }
+    @include sm{
+        font-size: 1.6rem;
+        select{
+            width: calc(100% - 8.4rem);
+        }
+    }
+}
+
+/*====================================================
+門市據點 總頁
+====================================================*/
 .storeList {
     display: flex;
     justify-content: flex-start;
@@ -133,6 +144,10 @@
         }
     }
 }
+
+/*====================================================
+門市據點 內頁
+====================================================*/
 .storeInfo{
     display: flex;
     justify-content: space-between;
@@ -185,87 +200,3 @@
         }
     }
 }
-
-
-
-
-
-
-// .storeInfo{
-//     .tab{
-//         display: none;
-//         &.active{
-//             display: flex;
-//             justify-content: space-between;
-//             align-items: flex-start;
-//         }
-//         .adressBox{
-//             width: calc(42% - 2rem);
-//             .detailBox{
-//                 border: 1px solid #00000020;
-//                 p{
-//                     padding: 1rem 2rem;
-//                     font-size: 2.4rem;
-//                 }
-//                 ul{
-//                     border-top: 1px solid #00000020;
-//                     padding: 1.5rem 2rem;
-//                     font-size: 2rem;
-//                     li{
-//                         &+li{
-//                             margin-top: 0.7rem;
-//                         }
-//                         span{
-//                             margin-top: -0.4rem;
-//                             display: inline-flex;
-//                             vertical-align: middle;
-//                         }
-//                         a{
-//                             text-decoration: none;
-//                             color: $dark;
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-//         .googleMap{
-//             width: 58%;
-//             position: relative;
-//             padding-top: 36.5%;
-//             height: 0;
-//             iframe {
-//                 position: absolute;
-//                 top: 0;
-//                 left: 0;
-//                 width: 100%;
-//                 height: 100%;
-//             }
-//         }
-//         @include md{
-//             &.active{
-//                 display: block;
-//             }
-//             .adressBox{
-//                 display: flex;
-//                 justify-content: space-between;
-//                 width: 100%;
-//                 .img,.detailBox{
-//                     width: calc((100% - 2rem)/2);
-//                 }
-//             }
-//             .googleMap{
-//                 width: 100%;
-//                 margin-top: 2rem;
-//                 padding-top: 60%;
-//             }
-//         }
-//         @include sm{
-//             .adressBox{
-//                 display: block;
-//                 .img,.detailBox{
-//                     width: 100%;
-//                 }
-//             }
-//         }
-//     }
-// }

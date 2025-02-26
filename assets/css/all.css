@@ -141,6 +141,9 @@ img {
   }
 }
 
+/*====================================================
+圖片動態效果
+====================================================*/
 .imageZoomSquare a .img, .imageZoomHorizontal a .img {
   overflow: hidden;
   position: relative;
@@ -168,6 +171,9 @@ img {
   padding-top: 37%;
 }
 
+/*====================================================
+後台 恢復樣版編輯器
+====================================================*/
 .textEditorArea h1, .textEditorArea h2, .textEditorArea h3, .textEditorArea h4, .textEditorArea h5, .textEditorArea h6 {
   display: block;
   margin-inline-start: 0px;
@@ -258,6 +264,49 @@ img {
 .textEditorArea table th, .textEditorArea table td {
   border: 1px solid;
   padding: 4px 8px;
+}
+
+.pageNavigation {
+  margin-top: 13.5rem;
+  text-align: center;
+}
+@media screen and (max-width: 767.98px) {
+  .pageNavigation {
+    margin-top: 6.4rem;
+  }
+}
+.pageNavigation .pagination {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #707070;
+}
+.pageNavigation .pagination .pageItem a {
+  text-decoration: none;
+  color: #707070;
+  padding: 1rem;
+  display: inline-block;
+}
+.pageNavigation .pagination .pageItem + .pageItem {
+  border-left: 1px solid #707070;
+}
+.pageNavigation .pagination .pageItem:last-of-type a, .pageNavigation .pagination .pageItem:first-of-type a {
+  background-color: #F2F2F2;
+}
+.pageNavigation .pagination .pageItem:not(:last-of-type) a, .pageNavigation .pagination .pageItem:not(:first-of-type) a {
+  padding: 1rem 2rem;
+}
+@media screen and (max-width: 767.98px) {
+  .pageNavigation .pagination .pageItem:not(:last-of-type) a, .pageNavigation .pagination .pageItem:not(:first-of-type) a {
+    padding: 1rem 1.4rem;
+  }
+}
+.pageNavigation .pagination .pageItem.disabled a {
+  background-color: #fff;
+}
+.pageNavigation .pagination .pageItem.active a {
+  background-color: #000000;
+  color: #fff;
 }
 
 header {
@@ -458,6 +507,9 @@ footer .footerInner .underBox ul li a {
   }
 }
 
+/*====================================================
+首頁圖
+====================================================*/
 .mainVisual {
   position: relative;
   z-index: 0;
@@ -510,220 +562,231 @@ footer .footerInner .underBox ul li a {
   }
 }
 
-main .container .topPageTitle {
+/*====================================================
+首頁 標題 Common
+====================================================*/
+.container .topPageTitle {
   font-size: 4.8rem;
   color: #650300;
   font-weight: bold;
   text-align: center;
   margin-bottom: 4rem;
 }
-main .container .topPageTitle.textWhite {
+.container .topPageTitle.textWhite {
   color: #fff;
 }
 @media screen and (max-width: 767.98px) {
-  main .container .topPageTitle {
+  .container .topPageTitle {
     font-size: 2.4rem;
   }
 }
-main .topSectionOne ul {
+
+/*====================================================
+other
+====================================================*/
+.topSectionOne ul {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: wrap;
 }
-main .topSectionOne ul li {
+.topSectionOne ul li {
   width: calc((100% - 12rem) / 4);
   text-align: center;
 }
-main .topSectionOne ul li + li {
+.topSectionOne ul li + li {
   margin-left: 4rem;
 }
-main .topSectionOne ul li .icon img {
+.topSectionOne ul li .icon img {
   width: 100%;
   max-width: 100px;
   height: auto;
 }
-main .topSectionOne ul li dl dt {
+.topSectionOne ul li dl dt {
   color: #650300;
   font-size: 2.4rem;
   font-weight: bold;
   margin: 1rem 0;
 }
-main .topSectionOne ul li dl dd {
+.topSectionOne ul li dl dd {
   text-align: left;
 }
 @media screen and (max-width: 991.98px) {
-  main .topSectionOne ul li {
+  .topSectionOne ul li {
     width: calc((100% - 4rem) / 2);
   }
-  main .topSectionOne ul li:nth-of-type(2n - 1) {
+  .topSectionOne ul li:nth-of-type(2n - 1) {
     margin-left: 0;
   }
-  main .topSectionOne ul li:nth-of-type(n+3) {
+  .topSectionOne ul li:nth-of-type(n+3) {
     margin-top: 4rem;
   }
 }
 @media screen and (max-width: 767.98px) {
-  main .topSectionOne ul {
+  .topSectionOne ul {
     display: block;
   }
-  main .topSectionOne ul li {
+  .topSectionOne ul li {
     width: initial;
   }
-  main .topSectionOne ul li + li {
+  .topSectionOne ul li + li {
     margin: 2rem 0 0;
   }
-  main .topSectionOne ul li dl dd {
+  .topSectionOne ul li dl dd {
     display: inline-block;
   }
 }
-main .topSectionTwo .seriesList {
+
+.topSectionTwo .seriesList {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
 }
-main .topSectionTwo .seriesListItem {
+.topSectionTwo .seriesListItem {
   width: calc((100% - 6rem) / 3);
 }
-main .topSectionTwo .seriesListItem + .seriesListItem {
+.topSectionTwo .seriesListItem + .seriesListItem {
   margin: 0 0 0 3rem;
 }
-main .topSectionTwo .seriesListItem a {
+.topSectionTwo .seriesListItem a {
   text-decoration: none;
   color: #AA0601;
   text-align: center;
 }
-main .topSectionTwo .seriesListItem a p {
+.topSectionTwo .seriesListItem a p {
   margin-top: 1.5rem;
   font-size: 4.8rem;
   font-weight: bold;
   line-height: 1;
 }
 @media screen and (max-width: 991.98px) {
-  main .topSectionTwo .seriesListItem {
+  .topSectionTwo .seriesListItem {
     width: 80%;
     margin: 0 auto;
   }
 }
 @media screen and (max-width: 767.98px) {
-  main .topSectionTwo .seriesList {
+  .topSectionTwo .seriesList {
     display: block;
   }
-  main .topSectionTwo .seriesListItem {
+  .topSectionTwo .seriesListItem {
     width: 100%;
   }
-  main .topSectionTwo .seriesListItem + .seriesListItem {
+  .topSectionTwo .seriesListItem + .seriesListItem {
     margin: 4rem auto 0;
   }
 }
-main .topSectionThree {
+
+.topSectionThree {
   background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-md.png?raw=true") center/cover;
 }
-main .topSectionThree .classicList {
+.topSectionThree .classicList {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
 }
-main .topSectionThree .classicListItem {
+.topSectionThree .classicListItem {
   width: 50%;
   text-align: center;
 }
-main .topSectionThree .classicListItem a {
+.topSectionThree .classicListItem a {
   text-decoration: none;
   color: #AA0601;
   background-color: #fff;
   display: block;
 }
-main .topSectionThree .classicListItem a p {
+.topSectionThree .classicListItem a p {
   font-size: 4.8rem;
   font-weight: bold;
   line-height: 1;
   padding: 1rem;
 }
 @media screen and (max-width: 767.98px) {
-  main .topSectionThree .classicList {
+  .topSectionThree .classicList {
     display: block;
   }
-  main .topSectionThree .classicListItem {
+  .topSectionThree .classicListItem {
     width: 100%;
   }
-  main .topSectionThree .classicListItem + .classicListItem {
+  .topSectionThree .classicListItem + .classicListItem {
     margin-top: 2rem;
   }
 }
-main .topSectionFour .recommendList {
+
+.topSectionFour .recommendList {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
 }
-main .topSectionFour .recommendListItem {
+.topSectionFour .recommendListItem {
   width: calc((100% - 6rem) / 4);
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1607843137);
   border-radius: 0.4rem;
   display: flex;
   flex-wrap: wrap;
 }
-main .topSectionFour .recommendListItem:not(:last-of-type) {
+.topSectionFour .recommendListItem:not(:last-of-type) {
   margin-right: 2rem;
 }
-main .topSectionFour .recommendListItem .img {
+.topSectionFour .recommendListItem .img {
   width: 100%;
 }
-main .topSectionFour .recommendListItem .img img {
+.topSectionFour .recommendListItem .img img {
   width: 100%;
   height: auto;
   border-radius: 0.4rem 0.4rem 0 0;
 }
-main .topSectionFour .recommendListItem .textBox {
+.topSectionFour .recommendListItem .textBox {
   display: flex;
   flex-direction: column;
   width: 100%;
   padding: 1.6rem;
 }
-main .topSectionFour .recommendListItem .textBox time {
+.topSectionFour .recommendListItem .textBox time {
   margin-top: 5rem;
   color: #707070;
 }
 @media screen and (max-width: 991.98px) {
-  main .topSectionFour .recommendListItem {
+  .topSectionFour .recommendListItem {
     width: calc((100% - 2rem) / 2);
   }
-  main .topSectionFour .recommendListItem:not(:last-of-type) {
+  .topSectionFour .recommendListItem:not(:last-of-type) {
     margin-right: initial;
   }
-  main .topSectionFour .recommendListItem:nth-of-type(2n) {
+  .topSectionFour .recommendListItem:nth-of-type(2n) {
     margin-left: 2rem;
   }
-  main .topSectionFour .recommendListItem:nth-of-type(n+3) {
+  .topSectionFour .recommendListItem:nth-of-type(n+3) {
     margin-top: 2rem;
   }
-  main .topSectionFour .recommendListItem .textBox time {
+  .topSectionFour .recommendListItem .textBox time {
     margin-top: 2rem;
   }
 }
 @media screen and (max-width: 575.98px) {
-  main .topSectionFour .recommendListItem {
+  .topSectionFour .recommendListItem {
     width: 100%;
   }
-  main .topSectionFour .recommendListItem:nth-of-type(2n) {
+  .topSectionFour .recommendListItem:nth-of-type(2n) {
     margin-left: 0;
   }
-  main .topSectionFour .recommendListItem:nth-of-type(n+2) {
+  .topSectionFour .recommendListItem:nth-of-type(n+2) {
     margin-top: 2rem;
   }
 }
-main .topSectionFive .container {
+
+.topSectionFive .container {
   max-width: 736px;
 }
-main .topSectionFive .container .contactBox {
+.topSectionFive .container .contactBox {
   margin-top: 4rem;
 }
-main .topSectionFive .container .contactBox > div {
+.topSectionFive .container .contactBox > div {
   margin-bottom: 2rem;
 }
-main .topSectionFive .container .contactBox textarea, main .topSectionFive .container .contactBox input[type=text], main .topSectionFive .container .contactBox input[type=email], main .topSectionFive .container .contactBox input[type=number], main .topSectionFive .container .contactBox input[type=tel] {
+.topSectionFive .container .contactBox textarea, .topSectionFive .container .contactBox input[type=text], .topSectionFive .container .contactBox input[type=email], .topSectionFive .container .contactBox input[type=number], .topSectionFive .container .contactBox input[type=tel] {
   margin: 0;
   padding: 0.2rem 0.8rem !important;
   width: 100%;
@@ -737,20 +800,20 @@ main .topSectionFive .container .contactBox textarea, main .topSectionFive .cont
   min-height: 36px;
   font-family: "Noto Sans TC", serif;
 }
-main .topSectionFive .container .contactBox textarea::-moz-placeholder, main .topSectionFive .container .contactBox input[type=text]::-moz-placeholder, main .topSectionFive .container .contactBox input[type=email]::-moz-placeholder, main .topSectionFive .container .contactBox input[type=number]::-moz-placeholder, main .topSectionFive .container .contactBox input[type=tel]::-moz-placeholder {
+.topSectionFive .container .contactBox textarea::-moz-placeholder, .topSectionFive .container .contactBox input[type=text]::-moz-placeholder, .topSectionFive .container .contactBox input[type=email]::-moz-placeholder, .topSectionFive .container .contactBox input[type=number]::-moz-placeholder, .topSectionFive .container .contactBox input[type=tel]::-moz-placeholder {
   color: rgba(0, 0, 0, 0.2);
 }
-main .topSectionFive .container .contactBox textarea::placeholder, main .topSectionFive .container .contactBox input[type=text]::placeholder, main .topSectionFive .container .contactBox input[type=email]::placeholder, main .topSectionFive .container .contactBox input[type=number]::placeholder, main .topSectionFive .container .contactBox input[type=tel]::placeholder {
+.topSectionFive .container .contactBox textarea::placeholder, .topSectionFive .container .contactBox input[type=text]::placeholder, .topSectionFive .container .contactBox input[type=email]::placeholder, .topSectionFive .container .contactBox input[type=number]::placeholder, .topSectionFive .container .contactBox input[type=tel]::placeholder {
   color: rgba(0, 0, 0, 0.2);
 }
-main .topSectionFive .container .contactBox label {
+.topSectionFive .container .contactBox label {
   display: block;
   margin-bottom: 0.5rem;
 }
-main .topSectionFive .container .contactBox input[type=text], main .topSectionFive .container .contactBox input[type=email], main .topSectionFive .container .contactBox input[type=number], main .topSectionFive .container .contactBox input[type=tel] {
+.topSectionFive .container .contactBox input[type=text], .topSectionFive .container .contactBox input[type=email], .topSectionFive .container .contactBox input[type=number], .topSectionFive .container .contactBox input[type=tel] {
   border: 1px solid #000000;
 }
-main .topSectionFive .container .contactBox input[type=checkbox] {
+.topSectionFive .container .contactBox input[type=checkbox] {
   position: relative;
   margin: 0;
   width: 1.8rem;
@@ -762,10 +825,10 @@ main .topSectionFive .container .contactBox input[type=checkbox] {
   -moz-appearance: none;
   appearance: none;
 }
-main .topSectionFive .container .contactBox input[type=checkbox]:checked {
+.topSectionFive .container .contactBox input[type=checkbox]:checked {
   background-color: #AA0601;
 }
-main .topSectionFive .container .contactBox input[type=checkbox]:checked:before {
+.topSectionFive .container .contactBox input[type=checkbox]:checked:before {
   content: "";
   position: absolute;
   top: 1px;
@@ -776,22 +839,22 @@ main .topSectionFive .container .contactBox input[type=checkbox]:checked:before 
   border-right: 0.3rem solid #fff;
   border-bottom: 0.3rem solid #fff;
 }
-main .topSectionFive .container .contactBox textarea {
+.topSectionFive .container .contactBox textarea {
   border: 1px solid #000000;
   resize: none;
   height: 136px !important;
 }
-main .topSectionFive .container .contactBox .agree {
+.topSectionFive .container .contactBox .agree {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-main .topSectionFive .container .contactBox .agree label {
+.topSectionFive .container .contactBox .agree label {
   display: inline-block;
   margin: 0 0 0 1rem;
   cursor: pointer;
 }
-main .topSectionFive .container .contactBox .submitBtn {
+.topSectionFive .container .contactBox .submitBtn {
   display: block;
   color: #fff;
   background-color: #AA0601;
@@ -804,10 +867,13 @@ main .topSectionFive .container .contactBox .submitBtn {
   width: 80%;
   margin: 4rem auto 0;
 }
-main .topSectionFive .container .contactBox .submitBtn:hover {
+.topSectionFive .container .contactBox .submitBtn:hover {
   background-color: #650300;
 }
 
+/*====================================================
+other
+====================================================*/
 .faqText {
   font-weight: bold;
   font-size: 2.4rem;
@@ -822,39 +888,9 @@ main .topSectionFive .container .contactBox .submitBtn:hover {
   margin-bottom: 1rem;
 }
 
-.selectStoreBox {
-  font-size: 2.4rem;
-  margin-bottom: 4rem;
-}
-.selectStoreBox select {
-  margin: 0 0 0 1rem;
-  padding: 0.4rem 0.75rem 0.4rem 1rem;
-  background: #fff;
-  border: 1px solid #CED4DA;
-  outline: none;
-  font-family: "Noto Sans TC", serif;
-  color: rgba(73, 80, 87, 0.7);
-  width: 304px;
-  font-size: 1.8rem;
-}
-.selectStoreBox select:invalid {
-  color: #000000;
-}
-.selectStoreBox select option {
-  color: #000000;
-}
-.selectStoreBox select option:first-child {
-  color: #000000;
-}
-@media screen and (max-width: 575.98px) {
-  .selectStoreBox {
-    font-size: 1.6rem;
-  }
-  .selectStoreBox select {
-    width: calc(100% - 8.4rem);
-  }
-}
-
+/*====================================================
+Placeholder(佔位符)
+====================================================*/
 .storeInfo .adressBox .detailBox, .storeListItem .detailBox {
   border: 1px solid rgba(0, 0, 0, 0.1254901961);
   flex-grow: 1;
@@ -901,6 +937,45 @@ main .topSectionFive .container .contactBox .submitBtn:hover {
   content: "\e0c8";
 }
 
+/*====================================================
+門市據點 Common
+====================================================*/
+.selectStoreBox {
+  font-size: 2.4rem;
+  margin-bottom: 4rem;
+}
+.selectStoreBox select {
+  margin: 0 0 0 1rem;
+  padding: 0.4rem 0.75rem 0.4rem 1rem;
+  background: #fff;
+  border: 1px solid #CED4DA;
+  outline: none;
+  font-family: "Noto Sans TC", serif;
+  color: rgba(73, 80, 87, 0.7);
+  width: 304px;
+  font-size: 1.8rem;
+}
+.selectStoreBox select:invalid {
+  color: #000000;
+}
+.selectStoreBox select option {
+  color: #000000;
+}
+.selectStoreBox select option:first-child {
+  color: #000000;
+}
+@media screen and (max-width: 575.98px) {
+  .selectStoreBox {
+    font-size: 1.6rem;
+  }
+  .selectStoreBox select {
+    width: calc(100% - 8.4rem);
+  }
+}
+
+/*====================================================
+門市據點 總頁
+====================================================*/
 .storeList {
   display: flex;
   justify-content: flex-start;
@@ -952,6 +1027,9 @@ main .topSectionFive .container .contactBox .submitBtn:hover {
   }
 }
 
+/*====================================================
+門市據點 內頁
+====================================================*/
 .storeInfo {
   display: flex;
   justify-content: space-between;
@@ -1007,12 +1085,6 @@ main .topSectionFive .container .contactBox .submitBtn:hover {
 /*====================================================
 Placeholder(佔位符)
 ====================================================*/
-.blogListItem .right .underBox .textBox, .blogListItem .right .underBoxInner .titleBox .subText, .blogListItem .right .underBoxInner .titleBox .titleText {
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
 /*====================================================
 部落格 總頁
 ====================================================*/
@@ -1059,13 +1131,19 @@ Placeholder(佔位符)
 .blogListItem .right .underBoxInner .titleBox .titleText {
   color: #650300;
   font-size: 3.2rem;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
+  overflow: hidden;
 }
 .blogListItem .right .underBoxInner .titleBox .subText {
   color: #000000;
   font-size: 2rem;
   font-weight: bold;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
+  overflow: hidden;
 }
 .blogListItem .right .underBoxInner time {
   color: rgba(0, 0, 0, 0.7);
@@ -1074,7 +1152,10 @@ Placeholder(佔位符)
   text-align: right;
 }
 .blogListItem .right .underBox .textBox {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
   -webkit-line-clamp: 5;
+  overflow: hidden;
 }
 .blogListItem .right .blogBtn {
   text-align: right;
@@ -1111,49 +1192,6 @@ Placeholder(佔位符)
   .blogListItem .right .blogBtn {
     display: none;
   }
-}
-
-.pageNavigation {
-  margin-top: 13.5rem;
-  text-align: center;
-}
-@media screen and (max-width: 767.98px) {
-  .pageNavigation {
-    margin-top: 6.4rem;
-  }
-}
-.pageNavigation .pagination {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #707070;
-}
-.pageNavigation .pagination .pageItem a {
-  text-decoration: none;
-  color: #707070;
-  padding: 1rem;
-  display: inline-block;
-}
-.pageNavigation .pagination .pageItem + .pageItem {
-  border-left: 1px solid #707070;
-}
-.pageNavigation .pagination .pageItem:last-of-type a, .pageNavigation .pagination .pageItem:first-of-type a {
-  background-color: #F2F2F2;
-}
-.pageNavigation .pagination .pageItem:not(:last-of-type) a, .pageNavigation .pagination .pageItem:not(:first-of-type) a {
-  padding: 1rem 2rem;
-}
-@media screen and (max-width: 767.98px) {
-  .pageNavigation .pagination .pageItem:not(:last-of-type) a, .pageNavigation .pagination .pageItem:not(:first-of-type) a {
-    padding: 1rem 1.4rem;
-  }
-}
-.pageNavigation .pagination .pageItem.disabled a {
-  background-color: #fff;
-}
-.pageNavigation .pagination .pageItem.active a {
-  background-color: #000000;
-  color: #fff;
 }
 
 /*====================================================

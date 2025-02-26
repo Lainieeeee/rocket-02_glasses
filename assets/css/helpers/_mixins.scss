@@ -13,25 +13,31 @@ Breakpoints
 ====================================================*/
 @mixin xs {
     @media screen and (max-width: 374.98px) {
-        @content; }
+        @content;
+    }
 }
 @mixin sm {
     @media screen and (max-width: 575.98px) {
-        @content; }
+        @content;
+    }
 }
 @mixin md {
     @media screen and (max-width: 767.98px) {
-        @content; }
+        @content;
+    }
 }
 @mixin lg {
     @media screen and (max-width: 991.98px) {
-        @content; }
+        @content;
+    }
 }
 @mixin xl {
     @media screen and (max-width: 1199.98px) {
-        @content; }
+        @content;
+    }
 }
 @mixin xxl {
     @media screen and (max-width: 1399.98px) {
-        @content; }
+        @content;
+    }
 }
