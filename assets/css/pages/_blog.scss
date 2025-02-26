@@ -1,3 +1,182 @@
+/*====================================================
+Placeholder(佔位符)
+====================================================*/
+%line-clamp{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/*====================================================
+部落格 總頁
+====================================================*/
+.blogList{
+    &Item{
+        display: flex;
+        justify-content: space-between;
+        &+.blogListItem{
+            margin-top: 6rem;
+            @include md{
+                margin-top: 2.4rem;
+            }
+        }
+        .imgBox,.right{
+            width: calc((100% - 4rem)/2);
+        }
+        .imgBox{
+            &.imageZoomHorizontal {
+                a{
+                    .img{
+                        padding-top: 60%;
+                        @include lg{
+                            padding-top: 80%;
+                        }
+                    }
+                }
+            }
+        }
+        .right{
+            display: flex;
+            flex-direction: column;
+            color: $gray;
+            .underBox{
+                flex-grow: 1;
+                &Inner{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-end;
+                    margin-bottom: 1rem;
+                    .titleBox{
+                        width: calc(100% - 11rem);
+                        .titleText{
+                            color: $dark-red;
+                            font-size: 3.2rem;
+                            @extend %line-clamp;
+                            -webkit-line-clamp: 1; // 文字最多顯示1行
+                        }
+                        .subText{
+                            color: $dark;
+                            font-size: 2rem;
+                            font-weight: bold;
+                            @extend %line-clamp;
+                            -webkit-line-clamp: 1; // 文字最多顯示1行
+                        }
+                    }
+                    time{
+                        color: rgba($dark, 0.7);
+                        width: 10rem;
+                        margin-left: 1rem;
+                        text-align: right;
+                    }
+                }
+                .textBox{
+                    @extend %line-clamp;
+                    -webkit-line-clamp: 5; // 文字最多顯示5行
+                }
+            }
+            .blogBtn{
+                text-align: right;
+                a{
+                    text-decoration: none;
+                    color: $dark-red;
+                    font-size: 3.6rem;
+                    font-weight: bold;
+                    transition: 0.3s;
+                    &:hover{
+                        color: $red;
+                    }
+                }
+            }
+        }
+        @include md{
+            display: block;
+            .imgBox,.right{
+                width: 100%;
+            }
+            .imgBox{
+                &.imageZoomHorizontal {
+                    a{
+                        .img{
+                            padding-top: 60%;
+                        }
+                    }
+                }
+            }
+            .right{
+                .underBox{
+                    &Inner{
+                        .titleBox{
+                            .titleText{
+                                font-size: 2.4rem;
+                            }
+                            .subText{
+                                font-size: 1.6rem;
+                            }
+                        }
+                    }
+                    .textBox{
+                        display: none;
+                    }
+                }
+                .blogBtn{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+.pageNavigation{
+    margin-top: 13.5rem;
+    text-align: center;
+    @include md{
+        margin-top: 6.4rem;
+    }
+    .pagination{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid $gray;
+        .pageItem{
+            a{
+                text-decoration: none;
+                color: $gray;
+                padding: 1rem;
+                display: inline-block;
+            }
+            &+.pageItem{
+                border-left: 1px solid $gray;
+            }
+            &:last-of-type,&:first-of-type{
+                a{
+                    background-color: #F2F2F2;
+                }
+            }
+            &:not(:last-of-type),&:not(:first-of-type){
+                a{
+                    padding: 1rem 2rem;
+                    @include md{
+                        padding: 1rem 1.4rem;
+                    }
+                }
+            }
+            &.disabled{
+                a{
+                    background-color: #fff;
+                }
+            }
+            &.active{
+                a{
+                    background-color: $dark;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+/*====================================================
+部落格 內頁
+====================================================*/
 .blogNavigation{
     background-color: $dark-red;
     color: #fff;

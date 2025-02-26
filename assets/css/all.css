@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -1003,6 +1004,161 @@ main .topSectionFive .container .contactBox .submitBtn:hover {
   }
 }
 
+/*====================================================
+Placeholder(佔位符)
+====================================================*/
+.blogListItem .right .underBox .textBox, .blogListItem .right .underBoxInner .titleBox .subText, .blogListItem .right .underBoxInner .titleBox .titleText {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/*====================================================
+部落格 總頁
+====================================================*/
+.blogListItem {
+  display: flex;
+  justify-content: space-between;
+}
+.blogListItem + .blogListItem {
+  margin-top: 6rem;
+}
+@media screen and (max-width: 767.98px) {
+  .blogListItem + .blogListItem {
+    margin-top: 2.4rem;
+  }
+}
+.blogListItem .imgBox, .blogListItem .right {
+  width: calc((100% - 4rem) / 2);
+}
+.blogListItem .imgBox.imageZoomHorizontal a .img {
+  padding-top: 60%;
+}
+@media screen and (max-width: 991.98px) {
+  .blogListItem .imgBox.imageZoomHorizontal a .img {
+    padding-top: 80%;
+  }
+}
+.blogListItem .right {
+  display: flex;
+  flex-direction: column;
+  color: #707070;
+}
+.blogListItem .right .underBox {
+  flex-grow: 1;
+}
+.blogListItem .right .underBoxInner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 1rem;
+}
+.blogListItem .right .underBoxInner .titleBox {
+  width: calc(100% - 11rem);
+}
+.blogListItem .right .underBoxInner .titleBox .titleText {
+  color: #650300;
+  font-size: 3.2rem;
+  -webkit-line-clamp: 1;
+}
+.blogListItem .right .underBoxInner .titleBox .subText {
+  color: #000000;
+  font-size: 2rem;
+  font-weight: bold;
+  -webkit-line-clamp: 1;
+}
+.blogListItem .right .underBoxInner time {
+  color: rgba(0, 0, 0, 0.7);
+  width: 10rem;
+  margin-left: 1rem;
+  text-align: right;
+}
+.blogListItem .right .underBox .textBox {
+  -webkit-line-clamp: 5;
+}
+.blogListItem .right .blogBtn {
+  text-align: right;
+}
+.blogListItem .right .blogBtn a {
+  text-decoration: none;
+  color: #650300;
+  font-size: 3.6rem;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.blogListItem .right .blogBtn a:hover {
+  color: #AA0601;
+}
+@media screen and (max-width: 767.98px) {
+  .blogListItem {
+    display: block;
+  }
+  .blogListItem .imgBox, .blogListItem .right {
+    width: 100%;
+  }
+  .blogListItem .imgBox.imageZoomHorizontal a .img {
+    padding-top: 60%;
+  }
+  .blogListItem .right .underBoxInner .titleBox .titleText {
+    font-size: 2.4rem;
+  }
+  .blogListItem .right .underBoxInner .titleBox .subText {
+    font-size: 1.6rem;
+  }
+  .blogListItem .right .underBox .textBox {
+    display: none;
+  }
+  .blogListItem .right .blogBtn {
+    display: none;
+  }
+}
+
+.pageNavigation {
+  margin-top: 13.5rem;
+  text-align: center;
+}
+@media screen and (max-width: 767.98px) {
+  .pageNavigation {
+    margin-top: 6.4rem;
+  }
+}
+.pageNavigation .pagination {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #707070;
+}
+.pageNavigation .pagination .pageItem a {
+  text-decoration: none;
+  color: #707070;
+  padding: 1rem;
+  display: inline-block;
+}
+.pageNavigation .pagination .pageItem + .pageItem {
+  border-left: 1px solid #707070;
+}
+.pageNavigation .pagination .pageItem:last-of-type a, .pageNavigation .pagination .pageItem:first-of-type a {
+  background-color: #F2F2F2;
+}
+.pageNavigation .pagination .pageItem:not(:last-of-type) a, .pageNavigation .pagination .pageItem:not(:first-of-type) a {
+  padding: 1rem 2rem;
+}
+@media screen and (max-width: 767.98px) {
+  .pageNavigation .pagination .pageItem:not(:last-of-type) a, .pageNavigation .pagination .pageItem:not(:first-of-type) a {
+    padding: 1rem 1.4rem;
+  }
+}
+.pageNavigation .pagination .pageItem.disabled a {
+  background-color: #fff;
+}
+.pageNavigation .pagination .pageItem.active a {
+  background-color: #000000;
+  color: #fff;
+}
+
+/*====================================================
+部落格 內頁
+====================================================*/
 .blogNavigation {
   background-color: #650300;
   color: #fff;
