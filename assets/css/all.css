@@ -309,6 +309,40 @@ img {
   color: #fff;
 }
 
+.seriesArticle .img img {
+  width: 100%;
+  height: auto;
+}
+.seriesArticle .productInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2.4rem;
+}
+.seriesArticle .productInfo .price {
+  color: #AA0601;
+  font-weight: 500;
+}
+.seriesArticle .colorValidation {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: -0.4rem;
+}
+.seriesArticle .colorValidation li {
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 4px;
+  margin: 0.4rem;
+}
+.seriesArticle .colorValidation li.color-1 {
+  background-color: #5F3E2D;
+}
+.seriesArticle .colorValidation li.color-2 {
+  background-color: #B75929;
+}
+
 header {
   background-color: #AA0601;
   position: fixed;
@@ -637,43 +671,43 @@ other
   }
 }
 
-.topSectionTwo .seriesList {
+.topSectionTwo .topSeriesList {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
 }
-.topSectionTwo .seriesListItem {
+.topSectionTwo .topSeriesListItem {
   width: calc((100% - 6rem) / 3);
 }
-.topSectionTwo .seriesListItem + .seriesListItem {
+.topSectionTwo .topSeriesListItem + .topSeriesListItem {
   margin: 0 0 0 3rem;
 }
-.topSectionTwo .seriesListItem a {
+.topSectionTwo .topSeriesListItem a {
   text-decoration: none;
   color: #AA0601;
   text-align: center;
 }
-.topSectionTwo .seriesListItem a p {
+.topSectionTwo .topSeriesListItem a p {
   margin-top: 1.5rem;
   font-size: 4.8rem;
   font-weight: bold;
   line-height: 1;
 }
 @media screen and (max-width: 991.98px) {
-  .topSectionTwo .seriesListItem {
+  .topSectionTwo .topSeriesListItem {
     width: 80%;
     margin: 0 auto;
   }
 }
 @media screen and (max-width: 767.98px) {
-  .topSectionTwo .seriesList {
+  .topSectionTwo .topSeriesList {
     display: block;
   }
-  .topSectionTwo .seriesListItem {
+  .topSectionTwo .topSeriesListItem {
     width: 100%;
   }
-  .topSectionTwo .seriesListItem + .seriesListItem {
+  .topSectionTwo .topSeriesListItem + .topSeriesListItem {
     margin: 4rem auto 0;
   }
 }
@@ -1086,6 +1120,99 @@ Placeholder(佔位符)
 Placeholder(佔位符)
 ====================================================*/
 /*====================================================
+部落格 navigation(導航)
+====================================================*/
+.blogNavigation {
+  background-color: #650300;
+  color: #fff;
+}
+.blogNavigation .container {
+  padding: 1.6rem 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.blogNavigation .container ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.blogNavigation .container ul li {
+  margin-right: 4.8rem;
+}
+.blogNavigation .container ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2rem;
+}
+.blogNavigation .container .searchBox {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.blogNavigation .container .searchBox:hover input[type=search] {
+  width: 300px;
+  border: 1px solid #fff;
+  padding: 0.2rem 0.8rem !important;
+}
+.blogNavigation .container .searchBox .searchIcon {
+  color: #fff;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+.blogNavigation .container .searchBox .searchIcon span {
+  font-size: 4rem;
+}
+.blogNavigation .container .searchBox input[type=search] {
+  margin: 0;
+  padding: 0 !important;
+  width: 0px;
+  background: #650300;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-size: 1.6rem !important;
+  color: #fff;
+  min-height: 36px;
+  font-family: "Noto Sans TC", serif;
+  border: none;
+  transition: width 0.35s ease;
+  border: inherit;
+}
+.blogNavigation .container .searchBox input[type=search]::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+.blogNavigation .container .searchBox input[type=search]::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+@media screen and (max-width: 991.98px) {
+  .blogNavigation .container .searchBox:hover input[type=search] {
+    width: 200px;
+  }
+  .blogNavigation .container .searchBox input[type=search]:focus, .blogNavigation .container .searchBox input[type=search]:active {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .blogNavigation .container {
+    padding: 1.6rem 1.5rem;
+    display: block;
+  }
+  .blogNavigation .container ul li {
+    width: 25%;
+    text-align: center;
+    margin-right: inherit;
+  }
+  .blogNavigation .container ul li a {
+    font-size: 1.6rem;
+  }
+  .blogNavigation .container .searchBox {
+    display: none;
+  }
+}
+
+/*====================================================
 部落格 總頁
 ====================================================*/
 .blogListItem {
@@ -1197,96 +1324,6 @@ Placeholder(佔位符)
 /*====================================================
 部落格 內頁
 ====================================================*/
-.blogNavigation {
-  background-color: #650300;
-  color: #fff;
-}
-.blogNavigation .container {
-  padding: 1.6rem 5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.blogNavigation .container ul {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-.blogNavigation .container ul li {
-  margin-right: 4.8rem;
-}
-.blogNavigation .container ul li a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 2rem;
-}
-.blogNavigation .container .searchBox {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-.blogNavigation .container .searchBox:hover input[type=search] {
-  width: 300px;
-  border: 1px solid #fff;
-  padding: 0.2rem 0.8rem !important;
-}
-.blogNavigation .container .searchBox .searchIcon {
-  color: #fff;
-  cursor: pointer;
-  margin-left: 1rem;
-}
-.blogNavigation .container .searchBox .searchIcon span {
-  font-size: 4rem;
-}
-.blogNavigation .container .searchBox input[type=search] {
-  margin: 0;
-  padding: 0 !important;
-  width: 0px;
-  background: #650300;
-  outline: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  font-size: 1.6rem !important;
-  color: #fff;
-  min-height: 36px;
-  font-family: "Noto Sans TC", serif;
-  border: none;
-  transition: width 0.35s ease;
-  border: inherit;
-}
-.blogNavigation .container .searchBox input[type=search]::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.5);
-}
-.blogNavigation .container .searchBox input[type=search]::placeholder {
-  color: rgba(255, 255, 255, 0.5);
-}
-@media screen and (max-width: 991.98px) {
-  .blogNavigation .container .searchBox:hover input[type=search] {
-    width: 200px;
-  }
-  .blogNavigation .container .searchBox input[type=search]:focus, .blogNavigation .container .searchBox input[type=search]:active {
-    width: 200px;
-  }
-}
-@media screen and (max-width: 767.98px) {
-  .blogNavigation .container {
-    padding: 1.6rem 1.5rem;
-    display: block;
-  }
-  .blogNavigation .container ul li {
-    width: 25%;
-    text-align: center;
-    margin-right: inherit;
-  }
-  .blogNavigation .container ul li a {
-    font-size: 1.6rem;
-  }
-  .blogNavigation .container .searchBox {
-    display: none;
-  }
-}
-
 .breadcrumbList {
   display: flex;
   justify-content: flex-start;
@@ -1456,5 +1493,187 @@ Placeholder(佔位符)
   }
   .blogDetailBox .tagList {
     display: none;
+  }
+}
+
+/*====================================================
+Placeholder(a link)
+====================================================*/
+.seriesNavigation .container li a:hover:after, .seriesNavigation .container li.active a:after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  background-color: #AA0601;
+  width: 100%;
+  height: 8px;
+  bottom: 0;
+  left: 0;
+}
+
+/*====================================================
+系列鏡框 navigation(導航)
+====================================================*/
+.seriesNavigation .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+.seriesNavigation .container li {
+  width: 33.3333333333%;
+  text-align: center;
+  border-left: 1px solid #DCDCDC;
+}
+.seriesNavigation .container li:last-child {
+  border-right: 1px solid #DCDCDC;
+}
+.seriesNavigation .container li.active a {
+  position: relative;
+}
+.seriesNavigation .container li a {
+  text-decoration: none;
+  color: #000000;
+  display: block;
+  font-size: 3.2rem;
+  padding: 2rem 1rem;
+  font-weight: 500;
+  position: relative;
+}
+@media screen and (max-width: 767.98px) {
+  .seriesNavigation .container li a {
+    font-size: 1.6rem;
+  }
+}
+
+/*====================================================
+系列鏡框 首頁圖
+====================================================*/
+.seriesMainVisual {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.seriesMainVisual div {
+  width: 50%;
+}
+.seriesMainVisual div img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/*====================================================
+系列鏡框 標題
+====================================================*/
+.seriesTitle {
+  text-align: center;
+  margin-bottom: 3.2rem;
+}
+.seriesTitle h2 {
+  font-size: 4.2rem;
+  font-weight: 500;
+}
+.seriesTitle p {
+  font-size: 3.2rem;
+}
+@media screen and (max-width: 767.98px) {
+  .seriesTitle {
+    margin-bottom: 2.4rem;
+  }
+  .seriesTitle h2, .seriesTitle p {
+    font-size: 2.4rem;
+  }
+}
+
+/*====================================================
+系列鏡框 other
+====================================================*/
+.seriesList {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.seriesList.col-3 .seriesArticle {
+  width: calc((100% - 7.2rem) / 4);
+}
+.seriesList.col-3 .seriesArticle:nth-of-type(n+5) {
+  margin-top: 8rem;
+}
+.seriesList.col-3 .seriesArticle:not(:nth-of-type(4n - 3)) {
+  margin-left: 2.4rem;
+}
+@media screen and (max-width: 1199.98px) {
+  .seriesList.col-3 .seriesArticle {
+    width: calc((100% - 4.8rem) / 3);
+  }
+  .seriesList.col-3 .seriesArticle:nth-of-type(n+4) {
+    margin-top: 8rem;
+  }
+  .seriesList.col-3 .seriesArticle:not(:nth-of-type(4n - 3)) {
+    margin-left: initial;
+  }
+  .seriesList.col-3 .seriesArticle:not(:nth-of-type(3n - 2)) {
+    margin-left: 2.4rem;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .seriesList.col-3 .seriesArticle {
+    width: calc((100% - 2.4rem) / 2);
+  }
+  .seriesList.col-3 .seriesArticle:nth-of-type(n+3) {
+    margin-top: 8rem;
+  }
+  .seriesList.col-3 .seriesArticle:not(:nth-of-type(3n - 2)) {
+    margin-left: initial;
+  }
+  .seriesList.col-3 .seriesArticle:nth-of-type(2n) {
+    margin-left: 2.4rem;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  .seriesList.col-3 .seriesArticle {
+    width: 100%;
+  }
+  .seriesList.col-3 .seriesArticle:nth-of-type(n+2) {
+    margin-top: 2.4rem;
+  }
+  .seriesList.col-3 .seriesArticle:nth-of-type(2n) {
+    margin-left: initial;
+  }
+}
+.seriesList.col-4 .seriesArticle {
+  width: calc((100% - 4.8rem) / 3);
+}
+.seriesList.col-4 .seriesArticle:nth-of-type(n+4) {
+  margin-top: 8rem;
+}
+.seriesList.col-4 .seriesArticle:not(:nth-of-type(3n - 2)) {
+  margin-left: 2.4rem;
+}
+@media screen and (max-width: 991.98px) {
+  .seriesList.col-4 .seriesArticle {
+    width: calc((100% - 2.4rem) / 2);
+  }
+  .seriesList.col-4 .seriesArticle:nth-of-type(n+3) {
+    margin-top: 8rem;
+  }
+  .seriesList.col-4 .seriesArticle:not(:nth-of-type(3n - 2)) {
+    margin-left: initial;
+  }
+  .seriesList.col-4 .seriesArticle:nth-of-type(2n) {
+    margin-left: 2.4rem;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  .seriesList.col-4 .seriesArticle {
+    width: 100%;
+  }
+  .seriesList.col-4 .seriesArticle:nth-of-type(n+2) {
+    margin-top: 2.4rem;
+  }
+  .seriesList.col-4 .seriesArticle:nth-of-type(2n) {
+    margin-left: initial;
   }
 }/*# sourceMappingURL=all.css.map */

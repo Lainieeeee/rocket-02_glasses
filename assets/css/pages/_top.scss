@@ -134,14 +134,14 @@ other
 }
 // 經典系列鏡框
 .topSectionTwo{
-    .seriesList{
+    .topSeriesList{
         display: flex;
         justify-content: center;
         align-items: flex-start;
         flex-wrap: wrap;
         &Item{
             width: calc((100% - 6rem)/3);
-            &+.seriesListItem{
+            &+.topSeriesListItem{
                 margin: 0 0 0 3rem;
             }
             a{
@@ -166,7 +166,7 @@ other
             display: block;
             &Item{
                 width: 100%;
-                &+.seriesListItem{
+                &+.topSeriesListItem{
                     margin: 4rem auto 0;
                 }
             }

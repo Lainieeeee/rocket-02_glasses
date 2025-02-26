@@ -1,0 +1,182 @@
+/*====================================================
+Placeholder(a link)
+====================================================*/
+%link-detail{
+    content: "";
+    position: absolute;
+    display: inline-block;
+    background-color: $red;
+    width: 100%;
+    height: 8px;
+    bottom: 0;
+    left: 0;
+}
+
+/*====================================================
+系列鏡框 navigation(導航)
+====================================================*/
+.seriesNavigation{
+    .container{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        padding: 0;
+        li{
+            width: calc(100% / 3);
+            text-align: center;
+            border-left: 1px solid #DCDCDC;
+            &:last-child{
+                border-right: 1px solid #DCDCDC;
+            }
+            &.active{
+                a{
+                    position: relative;
+                    &:after{
+                        @extend %link-detail;
+                    }
+                }
+            }
+            a{
+                text-decoration: none;
+                color: $dark;
+                display: block;
+                font-size: 3.2rem;
+                padding: 2rem 1rem;
+                font-weight: 500;
+                position: relative;
+                &:hover{
+                    &:after{
+                        @extend %link-detail;
+                    }
+                }
+                @include md{
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+}
+
+/*====================================================
+系列鏡框 首頁圖
+====================================================*/
+.seriesMainVisual{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div{
+        width: 50%;
+        img{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+/*====================================================
+系列鏡框 標題
+====================================================*/
+.seriesTitle{
+    text-align: center;
+    margin-bottom: 3.2rem;
+    h2{
+        font-size: 4.2rem;
+        font-weight: 500;
+    }
+    p{
+        font-size: 3.2rem;
+    }
+    @include md{
+        margin-bottom: 2.4rem;
+        h2,p{
+            font-size: 2.4rem;
+        }
+    }
+}
+
+/*====================================================
+系列鏡框 other
+====================================================*/
+.seriesList{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    &.col-3{
+        .seriesArticle{
+            width: calc((100% - 7.2rem)/4);
+            &:nth-of-type(n+5){
+                margin-top: 8rem;
+            }
+            &:not(:nth-of-type(4n - 3)){
+                margin-left: 2.4rem;
+            }
+            @include xl{
+                width: calc((100% - 4.8rem)/3);
+                &:nth-of-type(n+4){
+                    margin-top: 8rem;
+                }
+                &:not(:nth-of-type(4n - 3)){
+                    margin-left: initial;
+                }
+                &:not(:nth-of-type(3n - 2)){
+                    margin-left: 2.4rem;
+                }
+            }
+            @include lg{
+                width: calc((100% - 2.4rem)/2);
+                &:nth-of-type(n+3){
+                    margin-top: 8rem;
+                }
+                &:not(:nth-of-type(3n - 2)){
+                    margin-left: initial;
+                }
+                &:nth-of-type(2n){
+                    margin-left: 2.4rem;
+                }
+            }
+            @include sm{
+                width: 100%;
+                &:nth-of-type(n+2){
+                    margin-top: 2.4rem;
+                }
+                &:nth-of-type(2n){
+                    margin-left: initial;
+                }
+            }
+        }
+    }
+    &.col-4{
+        .seriesArticle{
+            width: calc((100% - 4.8rem)/3);
+            &:nth-of-type(n+4){
+                margin-top: 8rem;
+            }
+            &:not(:nth-of-type(3n - 2)){
+                margin-left: 2.4rem;
+            }
+            @include lg{
+                width: calc((100% - 2.4rem)/2);
+                &:nth-of-type(n+3){
+                    margin-top: 8rem;
+                }
+                &:not(:nth-of-type(3n - 2)){
+                    margin-left: initial;
+                }
+                &:nth-of-type(2n){
+                    margin-left: 2.4rem;
+                }
+            }
+            @include sm{
+                width: 100%;
+                &:nth-of-type(n+2){
+                    margin-top: 2.4rem;
+                }
+                &:nth-of-type(2n){
+                    margin-left: initial;
+                }
+            }
+        }
+    }
+}
