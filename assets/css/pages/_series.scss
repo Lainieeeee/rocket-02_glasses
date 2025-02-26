@@ -20,7 +20,7 @@ Placeholder(a link)
         display: flex;
         justify-content:center;
         align-items: center;
-        padding: 0;
+        padding: 0 5rem;
         li{
             width: calc(100% / 3);
             text-align: center;
@@ -49,10 +49,16 @@ Placeholder(a link)
                         @extend %link-detail;
                     }
                 }
+                @include lg{
+                    padding: 2rem 0.75rem;
+                }
                 @include md{
                     font-size: 1.6rem;
                 }
             }
+        }
+        @include md{
+            padding: 0;
         }
     }
 }

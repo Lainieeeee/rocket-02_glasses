@@ -435,6 +435,10 @@ footer .footerInner .topBox nav ul li {
 footer .footerInner .topBox nav ul li a {
   text-decoration: none;
   color: #fff;
+  transition: 0.3s;
+}
+footer .footerInner .topBox nav ul li a:hover {
+  opacity: 0.7;
 }
 @media screen and (max-width: 991.98px) {
   footer .footerInner .topBox nav ul li {
@@ -453,6 +457,12 @@ footer .footerInner .topBox .socialIconBox {
 }
 footer .footerInner .topBox .socialIconBox li {
   margin-left: 3rem;
+}
+footer .footerInner .topBox .socialIconBox li a {
+  transition: 0.3s;
+}
+footer .footerInner .topBox .socialIconBox li a:hover {
+  opacity: 0.7;
 }
 footer .footerInner .topBox .socialIconBox li a img {
   width: 4.8rem;
@@ -485,6 +495,10 @@ footer .footerInner .infoBox li a {
   color: #fff;
   text-decoration: none;
   font-size: 3.6rem;
+  transition: 0.3s;
+}
+footer .footerInner .infoBox li a:hover {
+  opacity: 0.7;
 }
 footer .footerInner .infoBox li a .icon {
   font-size: 4rem;
@@ -519,6 +533,10 @@ footer .footerInner .underBox ul li {
 footer .footerInner .underBox ul li a {
   color: #fff;
   text-decoration: none;
+  transition: 0.3s;
+}
+footer .footerInner .underBox ul li a:hover {
+  opacity: 0.7;
 }
 @media screen and (max-width: 767.98px) {
   footer .footerInner .underBox ul li {
@@ -1517,7 +1535,7 @@ Placeholder(a link)
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0;
+  padding: 0 5rem;
 }
 .seriesNavigation .container li {
   width: 33.3333333333%;
@@ -1539,9 +1557,19 @@ Placeholder(a link)
   font-weight: 500;
   position: relative;
 }
+@media screen and (max-width: 991.98px) {
+  .seriesNavigation .container li a {
+    padding: 2rem 0.75rem;
+  }
+}
 @media screen and (max-width: 767.98px) {
   .seriesNavigation .container li a {
     font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .seriesNavigation .container {
+    padding: 0;
   }
 }
 

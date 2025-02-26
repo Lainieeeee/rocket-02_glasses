@@ -21,6 +21,10 @@ footer{
                         a{
                             text-decoration: none;
                             color: #fff;
+                            transition: 0.3s;
+                            &:hover{
+                                opacity: 0.7;
+                            }
                         }
                         @include lg{
                             margin-right: 2.5rem;
@@ -38,6 +42,10 @@ footer{
                 li{
                     margin-left: 3rem;
                     a{
+                        transition: 0.3s;
+                        &:hover{
+                            opacity: 0.7;
+                        }
                         img{
                             width: 4.8rem;
                             height: auto;
@@ -71,6 +79,10 @@ footer{
                     color: #fff;
                     text-decoration: none;
                     font-size: 3.6rem;
+                    transition: 0.3s;
+                    &:hover{
+                        opacity: 0.7;
+                    }
                     .icon{
                         font-size: 4rem;
                         margin-right: 1rem;
@@ -100,6 +112,10 @@ footer{
                     a{
                         color: #fff;
                         text-decoration: none;
+                        transition: 0.3s;
+                        &:hover{
+                            opacity: 0.7;
+                        }
                     }
                     @include md{
                         margin-left: 3rem;
