@@ -222,28 +222,35 @@
             <div class="container">
                 <h2 class="topPageTitle">聯絡我們</h2>
                 <p>我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
-                <form action="" class="contactBox">
+                <form action="" class="contactBox" id="contactForm">
                     <div>
                         <label for="username" class="form-label">姓名</label>
                         <input type="text" name="name" class="form-control" id="username" placeholder="陳小明">
+                        <div class="errorMessage" id="nameError"></div>
                     </div>
                     <div>
                         <label for="tel" class="form-label">聯絡電話</label>
                         <input type="text" name="phone" class="form-control" id="tel" placeholder="0912-345-678">
+                        <div class="errorMessage" id="phoneError"></div>
                     </div>
                     <div>
                         <label for="validationEmail" class="form-label">電子郵件</label>
                         <input type="email" name="email" class="form-control" id="email" placeholder="example@email.com">
+                        <div class="errorMessage" id="emailError"></div>
                     </div>
                     <div>
-                        <label for="textarea" class="form-label">意見反應</label>
+                        <label for="textarea" class="form-label">意見反饋</label>
                         <textarea name="message" class="form-control" id="textarea" rows="5" placeholder="請輸入您的意見"></textarea>
+                        <div class="errorMessage" id="messageError"></div>
                     </div>
-                    <div class="agree">
-                        <input class="form-check-input" type="checkbox" value="" id="agree">
-                        <label class="form-check-label" for="agree">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>
+                    <div>
+                        <div class="agree">
+                            <input class="form-check-input" type="checkbox" value="" id="agree">
+                            <label class="form-check-label" for="agree">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>
+                        </div>
+                        <div class="errorMessage" id="agreeError"></div>
                     </div>
-                    <button type="button" onclick="" class="submitBtn">確認送出</button>
+                    <button type="button" onclick="validateForm()" class="submitBtn">確認送出</button>
                 </form>
             </div>
         </section>
@@ -304,5 +311,7 @@
             </div>
         </div>
     </footer>
+    <!-- js -->
+    <script src="assets/js/formCheck.js"></script>
 </body>
 </html>

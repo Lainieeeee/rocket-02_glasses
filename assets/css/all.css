@@ -903,6 +903,7 @@ other
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+  cursor: pointer;
 }
 .topSectionFive .container .contactBox input[type=checkbox]:checked {
   background-color: #AA0601;
@@ -954,6 +955,10 @@ other
     width: 100%;
     margin: 2.4rem auto 0;
   }
+}
+.topSectionFive .container .contactBox .errorMessage {
+  color: #AA0601;
+  font-size: 1.4rem;
 }
 
 /*====================================================

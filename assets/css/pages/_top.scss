@@ -326,6 +326,7 @@ other
                     border: 1px solid $dark;
                     vertical-align: -5px;
                     appearance: none;
+                    cursor: pointer;
                     &:checked{
                         background-color: $red;
                         &:before {
@@ -377,6 +378,10 @@ other
                     width: 100%;
                     margin: 2.4rem auto 0;
                 }
+            }
+            .errorMessage{
+                color: $red;
+                font-size: 1.4rem;
             }
         }
     }
