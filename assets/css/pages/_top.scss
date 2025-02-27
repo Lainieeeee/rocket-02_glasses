@@ -6,8 +6,16 @@
     z-index: 0;
     .imgBox{
         img{
+            object-fit: cover;
+            object-position: top left;
             width: 100%;
-            height: auto;
+            min-height: 600px;
+            @include md{
+                object-fit: initial;
+                object-position: inherit;
+                min-height: inherit;
+                height: auto;
+            }
         }
     }
     .textBox{
@@ -25,15 +33,16 @@
         .titleText{
             font-size: 6.4rem;
             font-weight: bold;
+            margin: 0.8rem 0;
         }
         .btnText{
-            color: #fff;
+            color: $white;
             background-color: $red;
             display: inline-block;
             padding: 0.5rem 1.2rem;
             font-size: 2rem;
         }
-        @include lg{
+        @include md{
             .subText{
                 font-size: 2.8rem;
             }
@@ -64,7 +73,7 @@
         text-align: center;
         margin-bottom: 4rem;
         &.textWhite{
-            color: #fff;
+            color: $white;
         }
         @include md{
             font-size: 2.4rem;
@@ -160,15 +169,15 @@ other
             &Item{
                 width: 80%;
                 margin: 0 auto;
+                &+.topSeriesListItem{
+                    margin: 4rem auto 0;
+                }
             }
         }
         @include md{
             display: block;
             &Item{
                 width: 100%;
-                &+.topSeriesListItem{
-                    margin: 4rem auto 0;
-                }
             }
         }
     }
@@ -187,7 +196,7 @@ other
             a{
                 text-decoration: none;
                 color: $red;
-                background-color: #fff;
+                background-color: $white;
                 display: block;
                 p{
                     font-size: 4.8rem;
@@ -277,7 +286,7 @@ other
         .contactBox{
             margin-top: 4rem;
             &>div{
-                margin-bottom: 2rem;
+                margin-bottom: 1.6rem;
             }
             %set-form{
                 margin: 0;
@@ -310,15 +319,13 @@ other
                 }
                 &[type="checkbox"] {
                     position: relative;
-                    margin: 0;
+                    margin: 0.5rem 0 0;
                     width: 1.8rem;
                     min-width: 1.8rem;
                     height: 1.8rem;
                     border: 1px solid $dark;
                     vertical-align: -5px;
-                    -webkit-appearance: none;
-                        -moz-appearance: none;
-                            appearance: none;
+                    appearance: none;
                     &:checked{
                         background-color: $red;
                         &:before {
@@ -329,11 +336,11 @@ other
                             transform: rotate(50deg);
                             width: 0.4rem;
                             height: 0.8rem;
-                            border-right: 0.3rem solid #fff;
-                            border-bottom: 0.3rem solid #fff;
+                            border-right: 0.3rem solid $white;
+                            border-bottom: 0.3rem solid $white;
                         }
                     }
-                    }
+                }
             }
             textarea {
                 @extend %set-form;
@@ -344,7 +351,7 @@ other
             .agree{
                 display: flex;
                 justify-content: flex-start;
-                align-items: center;
+                align-items: flex-start;
                 label{
                     display: inline-block;
                     margin: 0 0 0 1rem;
@@ -353,7 +360,7 @@ other
             }
             .submitBtn{
                 display: block;
-                color: #fff;
+                color: $white;
                 background-color: $red;
                 padding: 1.6rem;
                 border: initial;
@@ -362,9 +369,13 @@ other
                 @include fontSans;
                 cursor: pointer;
                 width: 80%;
-                margin: 4rem auto 0;
+                margin: 4.8rem auto 0;
                 &:hover{
                     background-color: $dark-red;
+                }
+                @include md{
+                    width: 100%;
+                    margin: 2.4rem auto 0;
                 }
             }
         }

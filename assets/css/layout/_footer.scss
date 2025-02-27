@@ -1,10 +1,10 @@
 footer{
     background-color: $red;
-    color: #fff;
+    color: $white;
     .footerInner{
         padding: 5rem;
         @include md{
-            padding: 5rem 1.5rem;
+            padding: 2.4rem 1.5rem;
             position: relative;
         }
         .topBox{
@@ -20,7 +20,7 @@ footer{
                         margin-right: 6rem;
                         a{
                             text-decoration: none;
-                            color: #fff;
+                            color: $white;
                             transition: 0.3s;
                             &:hover{
                                 opacity: 0.7;
@@ -68,15 +68,15 @@ footer{
             }
         }
         .infoBox{
-            margin: 3rem 0;
-            padding-bottom: 3rem;
-            border-bottom: 1px solid #fff;
+            margin: 3.2rem 0;
+            padding-bottom: 3.2rem;
+            border-bottom: 1px solid $white;
             li{
                 a{
                     display: inline-flex;
                     justify-content: flex-start;
                     align-items: center;
-                    color: #fff;
+                    color: $white;
                     text-decoration: none;
                     font-size: 3.6rem;
                     transition: 0.3s;
@@ -85,18 +85,24 @@ footer{
                     }
                     .icon{
                         font-size: 4rem;
-                        margin-right: 1rem;
-                    }
-                    @include md{
-                        font-size: 1.6rem;
-                        .icon{
-                            font-size: 1.8rem;
-                        }
+                        margin: 1rem 1rem 0 0;
+                        display: inline-flex;
+                        vertical-align: middle;
                     }
                 }
             }
             @include md{
-                margin: 0 0 3rem;
+                margin: 0 0 2rem;
+                padding-bottom: 2rem;
+                li{
+                    a{
+                        font-size: 1.6rem;
+                        .icon{
+                            font-size: 1.8rem;
+                            margin: 0.6rem 1rem 0 0;
+                        }
+                    }
+                }
             }
         }
         .underBox{
@@ -108,9 +114,9 @@ footer{
                 justify-content: flex-end;
                 align-items: center;
                 li{
-                    margin-left: 6rem;
+                    margin-left: 4.8rem;
                     a{
-                        color: #fff;
+                        color: $white;
                         text-decoration: none;
                         transition: 0.3s;
                         &:hover{
@@ -125,12 +131,12 @@ footer{
             @include md{
                 display: block;
                 ul{
-                    justify-content: flex-start;
-                    margin-top: 2rem;
+                    display: block;
+                    margin-top: 0.8rem;
                     li{
                         margin-left: inherit;
                         &+li{
-                            margin-left: 2rem;
+                            margin-top: 0.8rem;
                         }
                     }
                 }

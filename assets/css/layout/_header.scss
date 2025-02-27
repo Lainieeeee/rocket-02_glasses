@@ -26,7 +26,12 @@ header{
                     margin-left: 6rem;
                     a{
                         text-decoration: none;
-                        color: #fff;
+                        color: $white;
+                        font-size: 2rem;
+                        transition: 0.3s;
+                        &:hover{
+                            opacity: 0.7;
+                        }
                     }
                 }
                 @include md{
@@ -34,14 +39,19 @@ header{
                     li{
                         width: 50%;
                         margin-left: 0;
-                        border-top: 1px solid #fff;
+                        border-top: 1px solid $white;
                         a{
                             text-align: center;
                             display: block;
                             padding: 1rem;
+                            font-size: 1.6rem;
+                            &:hover{
+                                opacity: 1;
+                                background-color: $dark-red;
+                            }
                         }
                         &:nth-of-type(2n){
-                            border-left: 1px solid #fff;
+                            border-left: 1px solid $white;
                         }
                     }
                 }
@@ -49,6 +59,7 @@ header{
         }
     }
 }
+
 .positionBlock{
     height: 80.56px;
     @include md{

@@ -6,9 +6,6 @@
     <meta name="format-detection" content="telephone=no">
     <!-- css -->
     <link rel="stylesheet" href="/assets/css/all.css">
-    <!-- js -->
-    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="/assets/js/main.js"></script>
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,7 +24,7 @@
         <div class="container headerInner">
             <h1>
                 <a href="/">
-                    <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/logo-white.png?raw=true" alt="Logo" width="80" height="48.57">
+                    <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/logo-white.png?raw=true" alt="眼鏡官網Logo" width="80" height="48.57">
                 </a>
             </h1>
             <nav>
@@ -40,9 +37,11 @@
             </nav>
         </div>
     </header>
+    <!-- 這是用來保持頭部高度的區塊 -->
     <div class="positionBlock"></div>
     <!-- main -->
     <main>
+        <!-- seriesNavigation -->
         <nav class="seriesNavigation fontRoboto">
             <ul class="container">
                 <li><a href="series.html">OPTICAL</a></li>
@@ -50,29 +49,33 @@
                 <li><a href="series-functional.html">FUNCTIONAL</a></li>
             </ul>
         </nav>
+        <!-- seriesMainVisual -->
         <div class="seriesMainVisual">
             <div>
                 <picture>
-                    <!-- ～768px -->
+                    <!-- 768px～ -->
                     <source srcset="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-3.png?raw=true" media="(min-width: 768px)" type="image/png">
-                    <!-- 767px～ -->
+                    <!-- ～767px -->
                     <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-sm-3.png?raw=true" alt="系列鏡框圖">
                 </picture>
             </div>
             <div>
                 <picture>
-                    <!-- ～768px -->
+                    <!-- 768px～ -->
                     <source srcset="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-4.png?raw=true" media="(min-width: 768px)" type="image/png">
-                    <!-- 767px～ -->
+                    <!-- ～767px -->
                     <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-sm-4.png?raw=true" alt="系列鏡框圖">
                 </picture>
             </div>
         </div>
+        <!-- container -->
         <div class="container">
+            <!-- seriesTitle -->
             <div class="seriesTitle">
                 <h2 class="fontRoboto">2020 NEW COLLECTION</h2>
                 <p>賽璐珞鈦金屬混合鏡框</p>
             </div>
+            <!-- seriesList -->
             <div class="seriesList col-4">
                 <article class="seriesArticle">
                     <div class="img">

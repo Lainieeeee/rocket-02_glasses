@@ -62,7 +62,7 @@ Placeholder(佔位符)
     select{
         margin: 0 0 0 1rem;
         padding: 0.4rem 0.75rem 0.4rem 1rem;
-        background: #fff;
+        background: $white;
         border: 1px solid #CED4DA;
         outline: none;
         // -webkit-appearance: none;
@@ -114,7 +114,7 @@ Placeholder(佔位符)
             a{
                 display: block;
                 text-decoration: none;
-                color: #fff;
+                color: $white;
                 background-color: $dark;
                 text-align: center;
                 padding: 1.6rem;
@@ -156,6 +156,13 @@ Placeholder(佔位符)
         width: calc(42% - 2rem);
         min-width: 400px;
         margin-right: 2rem;
+        .img{
+            img{
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+        }
         .detailBox{
             @extend %detail-box;
         }

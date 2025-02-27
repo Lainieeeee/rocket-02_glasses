@@ -6,9 +6,6 @@
     <meta name="format-detection" content="telephone=no">
     <!-- css -->
     <link rel="stylesheet" href="/assets/css/all.css">
-    <!-- js -->
-    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="/assets/js/main.js"></script>
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,7 +24,7 @@
         <div class="container headerInner">
             <h1>
                 <a href="/">
-                    <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/logo-white.png?raw=true" alt="Logo" width="80" height="48.57">
+                    <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/logo-white.png?raw=true" alt="眼鏡官網Logo" width="80" height="48.57">
                 </a>
             </h1>
             <nav>
@@ -40,11 +37,14 @@
             </nav>
         </div>
     </header>
+    <!-- 這是用來保持頭部高度的區塊 -->
     <div class="positionBlock"></div>
     <!-- main -->
     <main>
         <div class="container">
+            <!-- commonTitle -->
             <h2 class="commonTitle">門市據點</h2>
+            <!-- selectStoreBox -->
             <div class="selectStoreBox">
                 <label for="selectStore">選擇分店</label>
                 <select id="selectStore">
@@ -55,7 +55,9 @@
                     <option value="4">高雄夢時代店</option>
                 </select>
             </div>
+            <!-- storeInfo -->
             <div class="storeInfo">
+                <!-- adressBox -->
                 <div class="adressBox">
                     <div class="img">
                         <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/store-1.png?raw=true" alt="門市圖像" loading="lazy">
@@ -75,6 +77,7 @@
                         </ul>
                     </div>
                 </div>
+                <!-- googleMap -->
                 <div class="googleMap">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.4583811915245!2d121.52653047592644!3d25.052448437547334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a966f6fc092d%3A0x9f740ea896779b57!2zMTA0OTHlj7DljJfluILkuK3lsbHljYDljZfkuqzmnbHot6_kuozmrrUyNeiZnw!5e0!3m2!1szh-TW!2stw!4v1740120203618!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>

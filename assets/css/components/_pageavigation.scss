@@ -35,13 +35,13 @@
             }
             &.disabled{
                 a{
-                    background-color: #fff;
+                    background-color: $white;
                 }
             }
             &.active{
                 a{
                     background-color: $dark;
-                    color: #fff;
+                    color: $white;
                 }
             }
         }

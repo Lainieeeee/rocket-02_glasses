@@ -115,30 +115,16 @@ img {
 .container {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 10rem 5rem;
+  padding: 8rem 5rem;
 }
 @media screen and (max-width: 767.98px) {
   .container {
-    padding: 5rem 1.5rem;
+    padding: 4rem 1.5rem;
   }
 }
 
 .bgRoseWhite {
   background-color: #FBF2F2;
-}
-
-.commonTitle {
-  font-size: 4.8rem;
-  font-weight: bold;
-  border-left: 8px solid #AA0601;
-  margin-bottom: 4rem;
-  padding-left: 2rem;
-}
-@media screen and (max-width: 767.98px) {
-  .commonTitle {
-    font-size: 2.4rem;
-    padding-left: 1rem;
-  }
 }
 
 /*====================================================
@@ -302,11 +288,11 @@ img {
   }
 }
 .pageNavigation .pagination .pageItem.disabled a {
-  background-color: #fff;
+  background-color: #ffffff;
 }
 .pageNavigation .pagination .pageItem.active a {
   background-color: #000000;
-  color: #fff;
+  color: #ffffff;
 }
 
 .seriesArticle .img img {
@@ -343,6 +329,20 @@ img {
   background-color: #B75929;
 }
 
+.commonTitle {
+  font-size: 4.8rem;
+  font-weight: bold;
+  border-left: 8px solid #AA0601;
+  margin-bottom: 3.2rem;
+  padding-left: 2rem;
+}
+@media screen and (max-width: 767.98px) {
+  .commonTitle {
+    font-size: 2.4rem;
+    padding-left: 1rem;
+  }
+}
+
 header {
   background-color: #AA0601;
   position: fixed;
@@ -376,7 +376,12 @@ header .headerInner nav ul li {
 }
 header .headerInner nav ul li a {
   text-decoration: none;
-  color: #fff;
+  color: #ffffff;
+  font-size: 2rem;
+  transition: 0.3s;
+}
+header .headerInner nav ul li a:hover {
+  opacity: 0.7;
 }
 @media screen and (max-width: 767.98px) {
   header .headerInner nav ul {
@@ -385,15 +390,20 @@ header .headerInner nav ul li a {
   header .headerInner nav ul li {
     width: 50%;
     margin-left: 0;
-    border-top: 1px solid #fff;
+    border-top: 1px solid #ffffff;
   }
   header .headerInner nav ul li a {
     text-align: center;
     display: block;
     padding: 1rem;
+    font-size: 1.6rem;
+  }
+  header .headerInner nav ul li a:hover {
+    opacity: 1;
+    background-color: #650300;
   }
   header .headerInner nav ul li:nth-of-type(2n) {
-    border-left: 1px solid #fff;
+    border-left: 1px solid #ffffff;
   }
 }
 
@@ -408,14 +418,14 @@ header .headerInner nav ul li a {
 
 footer {
   background-color: #AA0601;
-  color: #fff;
+  color: #ffffff;
 }
 footer .footerInner {
   padding: 5rem;
 }
 @media screen and (max-width: 767.98px) {
   footer .footerInner {
-    padding: 5rem 1.5rem;
+    padding: 2.4rem 1.5rem;
     position: relative;
   }
 }
@@ -434,7 +444,7 @@ footer .footerInner .topBox nav ul li {
 }
 footer .footerInner .topBox nav ul li a {
   text-decoration: none;
-  color: #fff;
+  color: #ffffff;
   transition: 0.3s;
 }
 footer .footerInner .topBox nav ul li a:hover {
@@ -484,15 +494,15 @@ footer .footerInner .topBox .socialIconBox li a img {
   }
 }
 footer .footerInner .infoBox {
-  margin: 3rem 0;
-  padding-bottom: 3rem;
-  border-bottom: 1px solid #fff;
+  margin: 3.2rem 0;
+  padding-bottom: 3.2rem;
+  border-bottom: 1px solid #ffffff;
 }
 footer .footerInner .infoBox li a {
   display: inline-flex;
   justify-content: flex-start;
   align-items: center;
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
   font-size: 3.6rem;
   transition: 0.3s;
@@ -502,19 +512,21 @@ footer .footerInner .infoBox li a:hover {
 }
 footer .footerInner .infoBox li a .icon {
   font-size: 4rem;
-  margin-right: 1rem;
+  margin: 1rem 1rem 0 0;
+  display: inline-flex;
+  vertical-align: middle;
 }
 @media screen and (max-width: 767.98px) {
+  footer .footerInner .infoBox {
+    margin: 0 0 2rem;
+    padding-bottom: 2rem;
+  }
   footer .footerInner .infoBox li a {
     font-size: 1.6rem;
   }
   footer .footerInner .infoBox li a .icon {
     font-size: 1.8rem;
-  }
-}
-@media screen and (max-width: 767.98px) {
-  footer .footerInner .infoBox {
-    margin: 0 0 3rem;
+    margin: 0.6rem 1rem 0 0;
   }
 }
 footer .footerInner .underBox {
@@ -528,10 +540,10 @@ footer .footerInner .underBox ul {
   align-items: center;
 }
 footer .footerInner .underBox ul li {
-  margin-left: 6rem;
+  margin-left: 4.8rem;
 }
 footer .footerInner .underBox ul li a {
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
   transition: 0.3s;
 }
@@ -548,14 +560,14 @@ footer .footerInner .underBox ul li a:hover {
     display: block;
   }
   footer .footerInner .underBox ul {
-    justify-content: flex-start;
-    margin-top: 2rem;
+    display: block;
+    margin-top: 0.8rem;
   }
   footer .footerInner .underBox ul li {
     margin-left: inherit;
   }
   footer .footerInner .underBox ul li + li {
-    margin-left: 2rem;
+    margin-top: 0.8rem;
   }
 }
 
@@ -567,8 +579,22 @@ footer .footerInner .underBox ul li a:hover {
   z-index: 0;
 }
 .mainVisual .imgBox img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top left;
+     object-position: top left;
   width: 100%;
-  height: auto;
+  min-height: 600px;
+}
+@media screen and (max-width: 767.98px) {
+  .mainVisual .imgBox img {
+    -o-object-fit: initial;
+       object-fit: initial;
+    -o-object-position: inherit;
+       object-position: inherit;
+    min-height: inherit;
+    height: auto;
+  }
 }
 .mainVisual .textBox {
   position: absolute;
@@ -586,15 +612,16 @@ footer .footerInner .underBox ul li a:hover {
 .mainVisual .textBox .titleText {
   font-size: 6.4rem;
   font-weight: bold;
+  margin: 0.8rem 0;
 }
 .mainVisual .textBox .btnText {
-  color: #fff;
+  color: #ffffff;
   background-color: #AA0601;
   display: inline-block;
   padding: 0.5rem 1.2rem;
   font-size: 2rem;
 }
-@media screen and (max-width: 991.98px) {
+@media screen and (max-width: 767.98px) {
   .mainVisual .textBox .subText {
     font-size: 2.8rem;
   }
@@ -625,7 +652,7 @@ footer .footerInner .underBox ul li a:hover {
   margin-bottom: 4rem;
 }
 .container .topPageTitle.textWhite {
-  color: #fff;
+  color: #ffffff;
 }
 @media screen and (max-width: 767.98px) {
   .container .topPageTitle {
@@ -717,6 +744,9 @@ other
     width: 80%;
     margin: 0 auto;
   }
+  .topSectionTwo .topSeriesListItem + .topSeriesListItem {
+    margin: 4rem auto 0;
+  }
 }
 @media screen and (max-width: 767.98px) {
   .topSectionTwo .topSeriesList {
@@ -724,9 +754,6 @@ other
   }
   .topSectionTwo .topSeriesListItem {
     width: 100%;
-  }
-  .topSectionTwo .topSeriesListItem + .topSeriesListItem {
-    margin: 4rem auto 0;
   }
 }
 
@@ -746,7 +773,7 @@ other
 .topSectionThree .classicListItem a {
   text-decoration: none;
   color: #AA0601;
-  background-color: #fff;
+  background-color: #ffffff;
   display: block;
 }
 .topSectionThree .classicListItem a p {
@@ -836,7 +863,7 @@ other
   margin-top: 4rem;
 }
 .topSectionFive .container .contactBox > div {
-  margin-bottom: 2rem;
+  margin-bottom: 1.6rem;
 }
 .topSectionFive .container .contactBox textarea, .topSectionFive .container .contactBox input[type=text], .topSectionFive .container .contactBox input[type=email], .topSectionFive .container .contactBox input[type=number], .topSectionFive .container .contactBox input[type=tel] {
   margin: 0;
@@ -867,15 +894,15 @@ other
 }
 .topSectionFive .container .contactBox input[type=checkbox] {
   position: relative;
-  margin: 0;
+  margin: 0.5rem 0 0;
   width: 1.8rem;
   min-width: 1.8rem;
   height: 1.8rem;
   border: 1px solid #000000;
   vertical-align: -5px;
   -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 .topSectionFive .container .contactBox input[type=checkbox]:checked {
   background-color: #AA0601;
@@ -888,8 +915,8 @@ other
   transform: rotate(50deg);
   width: 0.4rem;
   height: 0.8rem;
-  border-right: 0.3rem solid #fff;
-  border-bottom: 0.3rem solid #fff;
+  border-right: 0.3rem solid #ffffff;
+  border-bottom: 0.3rem solid #ffffff;
 }
 .topSectionFive .container .contactBox textarea {
   border: 1px solid #000000;
@@ -899,7 +926,7 @@ other
 .topSectionFive .container .contactBox .agree {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
 }
 .topSectionFive .container .contactBox .agree label {
   display: inline-block;
@@ -908,7 +935,7 @@ other
 }
 .topSectionFive .container .contactBox .submitBtn {
   display: block;
-  color: #fff;
+  color: #ffffff;
   background-color: #AA0601;
   padding: 1.6rem;
   border: initial;
@@ -917,10 +944,16 @@ other
   font-family: "Noto Sans TC", serif;
   cursor: pointer;
   width: 80%;
-  margin: 4rem auto 0;
+  margin: 4.8rem auto 0;
 }
 .topSectionFive .container .contactBox .submitBtn:hover {
   background-color: #650300;
+}
+@media screen and (max-width: 767.98px) {
+  .topSectionFive .container .contactBox .submitBtn {
+    width: 100%;
+    margin: 2.4rem auto 0;
+  }
 }
 
 /*====================================================
@@ -932,12 +965,17 @@ other
 }
 
 .faqListItem {
-  margin-top: 4rem;
+  margin-top: 3.2rem;
 }
 .faqListItem dt {
   font-weight: bold;
   font-size: 2rem;
   margin-bottom: 1rem;
+}
+@media screen and (max-width: 767.98px) {
+  .faqListItem {
+    margin-top: 2.4rem;
+  }
 }
 
 /*====================================================
@@ -999,7 +1037,7 @@ Placeholder(佔位符)
 .selectStoreBox select {
   margin: 0 0 0 1rem;
   padding: 0.4rem 0.75rem 0.4rem 1rem;
-  background: #fff;
+  background: #ffffff;
   border: 1px solid #CED4DA;
   outline: none;
   font-family: "Noto Sans TC", serif;
@@ -1047,7 +1085,7 @@ Placeholder(佔位符)
 .storeListItem .storeBtn a {
   display: block;
   text-decoration: none;
-  color: #fff;
+  color: #ffffff;
   background-color: #000000;
   text-align: center;
   padding: 1.6rem;
@@ -1091,6 +1129,12 @@ Placeholder(佔位符)
   width: calc(42% - 2rem);
   min-width: 400px;
   margin-right: 2rem;
+}
+.storeInfo .adressBox .img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 .storeInfo .googleMap {
   width: 58%;
@@ -1142,7 +1186,7 @@ Placeholder(佔位符)
 ====================================================*/
 .blogNavigation {
   background-color: #650300;
-  color: #fff;
+  color: #ffffff;
 }
 .blogNavigation .container {
   padding: 1.6rem 5rem;
@@ -1160,8 +1204,12 @@ Placeholder(佔位符)
 }
 .blogNavigation .container ul li a {
   text-decoration: none;
-  color: #fff;
+  color: #ffffff;
   font-size: 2rem;
+  transition: 0.3s;
+}
+.blogNavigation .container ul li a:hover {
+  opacity: 0.7;
 }
 .blogNavigation .container .searchBox {
   display: flex;
@@ -1170,11 +1218,11 @@ Placeholder(佔位符)
 }
 .blogNavigation .container .searchBox:hover input[type=search] {
   width: 300px;
-  border: 1px solid #fff;
+  border: 1px solid #ffffff;
   padding: 0.2rem 0.8rem !important;
 }
 .blogNavigation .container .searchBox .searchIcon {
-  color: #fff;
+  color: #ffffff;
   cursor: pointer;
   margin-left: 1rem;
 }
@@ -1191,7 +1239,7 @@ Placeholder(佔位符)
   -moz-appearance: none;
   appearance: none;
   font-size: 1.6rem !important;
-  color: #fff;
+  color: #ffffff;
   min-height: 36px;
   font-family: "Noto Sans TC", serif;
   border: none;
@@ -1284,7 +1332,7 @@ Placeholder(佔位符)
 .blogListItem .right .underBoxInner .titleBox .subText {
   color: #000000;
   font-size: 2rem;
-  font-weight: bold;
+  font-weight: 500;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
@@ -1295,11 +1343,12 @@ Placeholder(佔位符)
   width: 10rem;
   margin-left: 1rem;
   text-align: right;
+  font-weight: 500;
 }
 .blogListItem .right .underBox .textBox {
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 5;
+  -webkit-line-clamp: 6;
   overflow: hidden;
 }
 .blogListItem .right .blogBtn {
@@ -1314,6 +1363,36 @@ Placeholder(佔位符)
 }
 .blogListItem .right .blogBtn a:hover {
   color: #AA0601;
+}
+@media screen and (max-width: 991.98px) {
+  .blogListItem .right {
+    position: relative;
+    margin: 0 auto auto;
+  }
+  .blogListItem .right .underBox {
+    flex-grow: initial;
+  }
+  .blogListItem .right .underBox .textBox {
+    position: relative;
+  }
+  .blogListItem .right .underBox .textBox:after {
+    content: "⋯⋯　　　";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: #ffffff;
+  }
+  .blogListItem .right .blogBtn {
+    position: absolute;
+    bottom: -2px;
+    right: 0;
+  }
+  .blogListItem .right .blogBtn a {
+    font-size: 1.6rem;
+    color: #707070;
+    font-weight: normal;
+    text-transform: lowercase;
+  }
 }
 @media screen and (max-width: 767.98px) {
   .blogListItem {
@@ -1392,7 +1471,7 @@ Placeholder(佔位符)
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 .blogDetailBox .left {
   width: 60%;
@@ -1406,6 +1485,7 @@ Placeholder(佔位符)
 }
 .blogDetailBox .left .detailTitle p {
   font-size: 2.4rem;
+  font-weight: 500;
 }
 .blogDetailBox .left .textEditorArea {
   color: #707070;
@@ -1432,9 +1512,15 @@ Placeholder(佔位符)
 .blogDetailBox .left .underBox .shareBox ul li {
   margin-left: 1.6rem;
 }
+.blogDetailBox .left .underBox .shareBox ul li a {
+  transition: 0.3s;
+}
 .blogDetailBox .left .underBox .shareBox ul li a img {
   width: 2.4rem;
   height: auto;
+}
+.blogDetailBox .left .underBox .shareBox ul li a:hover {
+  opacity: 0.7;
 }
 .blogDetailBox .left .underBox .arrowBox {
   display: flex;
@@ -1447,6 +1533,10 @@ Placeholder(佔位符)
   align-items: center;
   text-decoration: none;
   color: #000000;
+  transition: 0.3s;
+}
+.blogDetailBox .left .underBox .arrowBox p a:hover {
+  opacity: 0.7;
 }
 @media screen and (max-width: 991.98px) {
   .blogDetailBox .left {
@@ -1495,7 +1585,6 @@ Placeholder(佔位符)
 @media screen and (max-width: 767.98px) {
   .blogDetailBox {
     display: block;
-    margin-top: 2rem;
   }
   .blogDetailBox .left {
     width: 100%;

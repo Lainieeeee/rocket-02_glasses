@@ -1,14 +1,14 @@
 /*====================================================
 custom color
 ====================================================*/
+$white:       #ffffff;
+$rose-white:  #FBF2F2;
 $dark:        #000000;
 $gray:        #707070;
-$rose-white:  #FBF2F2;
 $red:         #AA0601;
 $dark-red:    #650300;
 $brown:       #5F3E2D;
-$brown:       #5F3E2D;
-$wood:       #B75929;
+$wood:        #B75929;
 
 /*====================================================
 settings
@@ -54,28 +54,14 @@ img {
     font-style: italic;
   }
 }
-
 .container{
   max-width: 1400px;
   margin: 0 auto;
-  padding: 10rem 5rem;
+  padding: 8rem 5rem;
   @include md{
-    padding: 5rem 1.5rem;
+    padding: 4rem 1.5rem;
   }
 }
-
 .bgRoseWhite{
   background-color: $rose-white;
-}
-
-.commonTitle{
-  font-size: 4.8rem;
-  font-weight: bold;
-  border-left: 8px solid $red;
-  margin-bottom: 4rem;
-  padding-left: 2rem;
-  @include md{
-    font-size: 2.4rem;
-    padding-left: 1rem;
-  }
 }
