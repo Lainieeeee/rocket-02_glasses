@@ -758,7 +758,7 @@ other
 }
 
 .topSectionThree {
-  background: url("/assets/images/index/joint-bg.webp") center/cover;
+  background: url("assets/images/index/joint-bg.webp") center/cover;
 }
 .topSectionThree .classicList {
   display: flex;
